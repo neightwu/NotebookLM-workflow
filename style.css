@@ -225,7 +225,7 @@ header {
 
 .selector-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
 }
 
@@ -891,3 +891,209 @@ footer {
   color: var(--warning);
   border: 1px solid rgba(245, 158, 11, 0.2);
 }
+
+/* NotebookLM Interface Mockups */
+.notebooklm-mock {
+  background: #151b27;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  font-family: var(--font-body);
+  margin: 2rem 0;
+  box-shadow: var(--shadow-lg), 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.mock-header {
+  background: #0f131c;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-family: var(--font-title);
+  font-weight: 500;
+}
+
+.mock-body {
+  display: grid;
+  grid-template-columns: 220px 1fr 200px;
+  min-height: 380px;
+}
+
+@media (max-width: 968px) {
+  .mock-body {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}
+
+.mock-sidebar {
+  background: #111520;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (max-width: 968px) {
+  .mock-sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+}
+
+.mock-source-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.mock-source-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.mock-source-item.active {
+  border-color: rgba(99, 102, 241, 0.3);
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.mock-main {
+  background: #151b27;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.mock-chat-area {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.mock-bubble {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  max-width: 85%;
+}
+
+.mock-bubble.user {
+  background: var(--primary);
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+}
+
+.mock-bubble.ai {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-secondary);
+  align-self: flex-start;
+  border-bottom-left-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mock-bubble.ai strong {
+  color: var(--text-primary);
+}
+
+.mock-input-area {
+  display: flex;
+  gap: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.mock-input {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 0.6rem 1.25rem;
+  flex-grow: 1;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.mock-send-btn {
+  background: var(--primary);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mock-studio {
+  background: #111520;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (max-width: 968px) {
+  .mock-studio {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+}
+
+.mock-studio-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.mock-studio-item {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition-smooth);
+}
+
+.mock-studio-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.mock-studio-item.active {
+  border-color: rgba(6, 182, 212, 0.3);
+  background: rgba(6, 182, 212, 0.08);
+  color: var(--secondary);
+  font-weight: 600;
+}
+

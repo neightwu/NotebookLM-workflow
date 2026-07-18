@@ -809,6 +809,410 @@ const workflowData = {
         `
       }
     ]
+  },
+  template: {
+    title: "自訂主題研究 (空白範本與介面導覽)",
+    steps: [
+      {
+        stepBadge: "Step 1",
+        stepTitle: "打地基｜建立基礎理解",
+        vkThought: "萬丈高樓平地起。在開始任何新研究時，最忌諱一上來就搜尋全網或混雜多種未篩選的文獻。請先準備 1 至 2 本該學科的標準概論或教科書，將其匯入 NotebookLM 作為唯一來源，以確保 AI 的回答完全基於標準共識。",
+        instructions: [
+          "挑選 1-2 份您主題相關的開放授權教科書 (如 OpenStax) 或權威文獻講義",
+          "在 NotebookLM 左側來源面板點擊「新增來源」並上傳這些 PDF",
+          "複製下方提示詞，將括號中的 [你的主題] 換成您自己的研究主題後送出對話"
+        ],
+        promptTemplate: `請完全基於這份教科書與講義內容，為我建立 [你的主題] 的基礎知識框架。
+
+請列出：
+1. 此理論／領域的標準學術定義
+2. 最核心的 3 至 5 個專有名詞，每個附上學術定義與運作機制
+3. 此理論的發展歷史與代表性學者
+4. 目前學界對此主題的「主流共識」是什麼
+
+請特別標明這份教科書出版的年份，以便後續判斷哪些內容可能需要用較新的文獻來補強。`,
+        outputContent: `
+          <div class="vk-thought-box" style="margin-top: 1rem;">
+            <div class="vk-title">💡 介面操作引導</div>
+            <p class="vk-desc">在左側「來源」面板勾選您的教科書。此時發送對話，NotebookLM 就會<b>百分之百只根據您的教科書內容</b>進行回答，並在回答中附上對應原文的圓形數字角標（引文來源），保證不幻覺。</p>
+          </div>
+          <div class="notebooklm-mock">
+            <div class="mock-header">
+              <span>NotebookLM - 自訂主題研究地基</span>
+              <span style="color: var(--success);">● 已勾選教科書來源</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-sidebar">
+                <div class="mock-source-title">來源文件 (打地基)</div>
+                <div class="mock-source-item active">☑ [你的主題]教科書.pdf</div>
+                <div class="mock-source-item active">☑ 課程大綱與講義.txt</div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-chat-area">
+                  <div class="mock-bubble user">請完全基於這份教科書內容，為我建立 [你的主題] 的基礎知識框架...</div>
+                  <div class="mock-bubble ai">
+                    <strong>[你的主題] 基礎知識框架 (已生成)</strong><br>
+                    1. <strong>標準定義：</strong>該領域主要指... [1]<br>
+                    2. <strong>核心專有名詞：</strong>[名詞A] 是指...，運作原理為... [2]<br>
+                    3. <strong>主流共識：</strong>學界目前公認... [3]
+                  </div>
+                </div>
+                <div class="mock-input-area">
+                  <div class="mock-input">請為我詳細解釋 [名詞A]...</div>
+                  <button class="mock-send-btn">&rarr;</button>
+                </div>
+              </div>
+              <div class="mock-studio">
+                <div class="mock-studio-title">Studio 面板</div>
+                <div class="mock-studio-item active">簡介文件 (可點擊)</div>
+                <div class="mock-studio-item">學習指南</div>
+                <div class="mock-studio-item">常見問題解答</div>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        stepBadge: "Step 2",
+        stepTitle: "針對性補強｜Deep Research 跨文獻交叉",
+        vkThought: "打完地基後，我們需要利用 Deep Research 模式去搜尋最新的前沿論文與方法論爭議。我們明確要求 AI「只找教科書沒提的內容」，這樣抓回來的資料品質會高出很多。",
+        instructions: [
+          "在 NotebookLM 點擊「新建」 &rarr; 選擇「在網路上搜尋新來源」",
+          "下方來源管道選擇「網路」，並開啟「Deep Research」模式",
+          "複製下方 Prompt 模板，將主題與領域進行替換後送出搜尋"
+        ],
+        promptTemplate: `我手邊已經有 [你的主題] 的核心教科書內容。
+請幫我研究教科書通常會少談、但對深入理解這個主題很重要的內容：
+
+1. 該領域的重要學術文獻：
+   - 被引用次數最高的 5 篇綜述論文 (Review Paper) 或奠基論文
+   - 近期最重要的突破性研究
+   每一篇請附上：主要論點、發表年份、作者、以及 DOI 或連結
+2. 學界目前還在吵什麼 (方法論爭議、理論詮釋爭議、未解的實證問題)
+3. 大眾印象跟學術事實差最遠的地方
+
+主要以學術期刊論文、文獻回顧、後設分析為主。請附上資料來源連結。`,
+        outputContent: `
+          <div class="vk-thought-box" style="margin-top: 1rem;">
+            <div class="vk-title">💡 介面操作引導</div>
+            <p class="vk-desc">在網路上搜尋新來源時，切換到 <b>Deep Research 模式</b>。它會自動在後台進行多輪搜尋，篩選數十篇權威文獻，並直接將其彙整成一份報告，連同所有引用的來源網址自動匯入您的來源列表。</p>
+          </div>
+          <div class="notebooklm-mock">
+            <div class="mock-header">
+              <span>NotebookLM - Deep Research 補強搜尋</span>
+              <span style="color: var(--secondary);">🔍 正在執行 Deep Research 搜尋...</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-sidebar">
+                <div class="mock-source-title">來源文件 (已擴充)</div>
+                <div class="mock-source-item">☐ [你的主題]教科書.pdf</div>
+                <div class="mock-source-item active">☑ [網頁] Deep Research 補強報告</div>
+                <div class="mock-source-item active">☑ [論文] Review Paper 1 (2024)</div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-chat-area">
+                  <div class="mock-bubble ai">
+                    <strong>已完成 [你的主題] 針對性文獻補強</strong><br>
+                    已成功抓取並分析 12 個網路權威來源：<br>
+                    - <strong>5篇高引用文獻：</strong>[文獻1] (2023, DOI:xxx)、[文獻2] (2024)...<br>
+                    - <strong>學術爭議：</strong>派別 A 主張...；派別 B 批評其方法論為...<br>
+                    - <strong>大眾誤解：</strong>大眾普遍認為... 但學術論文指出其實是...
+                  </div>
+                </div>
+                <div class="mock-input-area">
+                  <div class="mock-input">請詳細說明 [文獻1] 與教科書定義的差別...</div>
+                  <button class="mock-send-btn">&rarr;</button>
+                </div>
+              </div>
+              <div class="mock-studio">
+                <div class="mock-studio-title">Studio 面板</div>
+                <div class="mock-studio-item">簡介文件</div>
+                <div class="mock-studio-item active">常見問題解答 (更新中)</div>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        stepBadge: "Step 3",
+        stepTitle: "建立術語表｜掃除專有名詞障礙",
+        vkThought: "學術主題的門檻大多在於術語。我們需要利用 NotebookLM 的報告工具，將資料庫裡的核心學術名詞與日常混淆詞彙整理出來，先掌握這 20% 的關鍵詞，就能看懂 80% 的內容。",
+        instructions: [
+          "在 NotebookLM 右側 Studio 面板點選「報告」",
+          "點選「自訂報告 (Custom Report)」",
+          "複製下方 Prompt 模板貼入報告生成框，等待產出完整的術語對照表"
+        ],
+        promptTemplate: `針對 [你的主題] 這個學術領域，請幫我整理「術語陷阱對照表」。
+
+請找出 3 至 5 個常被一般人誤解的學術詞彙，這些詞在日常生活中也會用到，但學術用法完全不同。
+
+整理格式：
+| 詞彙 | 日常意思 | 學術意思 | 為什麼容易混淆 |
+
+請聚焦在「日常會用、但學術定義截然不同」的詞，而非純學術專有名詞。如果這個詞在學術領域中有多個分支的不同定義，也請特別標出來。`,
+        outputContent: `
+          <div class="vk-thought-box" style="margin-top: 1rem;">
+            <div class="vk-title">💡 介面操作引導</div>
+            <p class="vk-desc">使用「自訂報告」工具產出的內容，會自動結構化成精緻的文件，並且可以一鍵儲存為筆記（Note）。這非常適合用來做為文獻回顧的基礎名詞解釋草稿。</p>
+          </div>
+          <div class="notebooklm-mock">
+            <div class="mock-header">
+              <span>NotebookLM - Studio 報告工具</span>
+              <span style="color: var(--primary);">📝 產出自訂報告中...</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-sidebar">
+                <div class="mock-source-title">全部勾選來源</div>
+                <div class="mock-source-item active">☑ 教科書.pdf</div>
+                <div class="mock-source-item active">☑ Deep Research 報告</div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-chat-area">
+                  <div class="mock-bubble ai">
+                    <strong>[自訂報告] 術語陷阱對照表已生成</strong><br>
+                    此報告已儲存至右側的記事。對照表欄位包括：<br>
+                    - [詞彙A]：日常指... 學術指... 混淆原因：...<br>
+                    - [詞彙B]：日常指... 學術指... 混淆原因：...
+                  </div>
+                </div>
+                <div class="mock-input-area">
+                  <div class="mock-input">將此報告儲存為記事...</div>
+                  <button class="mock-send-btn">&rarr;</button>
+                </div>
+              </div>
+              <div class="mock-studio">
+                <div class="mock-studio-title">Studio 面板</div>
+                <div class="mock-studio-item active">自訂報告 (點擊編輯)</div>
+                <div class="mock-studio-item">簡介文件</div>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        stepBadge: "Step 4",
+        stepTitle: "掌握輪廓｜利用心智圖展開全貌",
+        vkThought: "在問問題前，先看一遍資料全貌。利用 NotebookLM 自動產出的心智圖（Mind Map）工具，將所有子主題與理論關係視覺化展開，這能幫助你釐清核心概念與衍生概念之間的層級關係。",
+        instructions: [
+          "在 NotebookLM 右側 Studio 面板點選「心智圖 (Mind Map)」",
+          "點擊展開所有分支，花 3-5 分鐘瀏覽所有子節點",
+          "點擊有興趣的節點，AI 會在中間對話面板給予詳細的文獻回答，您可以直接將其儲存為記事"
+        ],
+        promptTemplate: `無（直接點擊 Studio 中的「心智圖」生成即可）`,
+        outputContent: `
+          <div class="vk-thought-box" style="margin-top: 1rem;">
+            <div class="vk-title">💡 介面操作引導</div>
+            <p class="vk-desc">心智圖是 NotebookLM 最具視覺感的探索工具。它會自動把你的來源庫概念串接起來。看到不懂的節點，直接點擊它，AI 會即時在主視窗中為您解說該節點的內容，免去手動輸入問題的時間。</p>
+          </div>
+          <div class="notebooklm-mock">
+            <div class="mock-header">
+              <span>NotebookLM - 心智圖工具</span>
+              <span style="color: var(--secondary);">🌿 心智圖已生成</span>
+            </div>
+            <div class="mock-body" style="grid-template-columns: 180px 1fr 240px;">
+              <div class="mock-sidebar">
+                <div class="mock-source-title">來源資料庫</div>
+                <div class="mock-source-item active">☑ 教科書 + 論文庫</div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-chat-area">
+                  <div class="mock-bubble ai">
+                    <strong>您點擊了節點：[核心子命題A]</strong><br>
+                    依據文獻，此概念是指... [1]，常用來解決... [2]。
+                  </div>
+                </div>
+                <div class="mock-input-area">
+                  <span style="font-size:0.75rem; color:var(--text-muted);">💡 點擊心智圖節點進行快速探索</span>
+                </div>
+              </div>
+              <div class="mock-studio" style="background:#131822;">
+                <div class="mock-studio-title">Studio 心智圖檢視</div>
+                <div class="mock-studio-item active">🌿 [你的主題]
+                  <div style="font-size:0.7rem; color:var(--text-muted); padding-left:0.5rem;">
+                    ├─ 核心概念
+                    ├─ 發展歷史
+                    └─ 理論爭議
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        stepBadge: "Step 5",
+        stepTitle: "建構地圖｜深度理解三連問",
+        vkThought: "此步驟是內化理論的核心。我們必須透過「設定對話角色」將 NotebookLM 升級為該領域的指導教授，接著依序進行「歷史脈絡問」、「相近理論比較問」與「應用與爭議問」，在心中搭起完整的知識地圖。",
+        instructions: [
+          "點選對話框右上角「設定對話」 &rarr; 「選擇角色」 &rarr; 「自訂」",
+          "貼入：『以相關領域的碩博士研究者來和我對話，回覆內容選擇「較長」』",
+          "依序複製下方三道 Prompt（歷史、比較、應用）在對話框中發送，閱讀產出內容"
+        ],
+        promptTemplate: `[請依序複製以下三道問題至 NotebookLM 對話框中執行]
+
+第一問｜歷史脈絡：
+從歷史脈絡切入 [你的主題]：
+1. 這個理論出現之前，學界用什麼解釋同一個現象？
+2. 奠基者為什麼覺得既有解釋不夠，需要提出新理論？他做了什麼關鍵研究來支持新主張？
+3. 這個理論被廣泛接受之後，有沒有發生過重大修正或學派分裂？是因為什麼新證據或新批評？
+4. 近 20 年的研究方向跟最初的版本差在哪？
+
+第二問｜理論比較：
+針對 [你的主題]，請從匯入的資料中，找出 2 至 3 個最常被學界拿來跟它對照比較的近似理論。每個理論請說明：
+1. 理論名稱（中英對照）
+2. 為什麼跟 [你的主題] 常被一起討論
+3. 跟 [你的主題] 最容易被混淆的地方是什麼
+(請要求使用「資料表」格式產出)
+
+第三問｜應用與爭議：
+針對 [你的主題]：
+1. 這個理論已經被應用到哪些原本學科以外的領域？每個應用領域請說明引用方式與接受度。
+2. 學界目前的主要爭議與未解問題有哪些？
+3. 我要用 3 分鐘跟一個完全不熟 [你的主題] 的朋友介紹這個理論。請幫我整理口語化的開場、重點與常見誤解。`,
+        outputContent: `
+          <div class="vk-thought-box" style="margin-top: 1rem;">
+            <div class="vk-title">💡 介面操作引導</div>
+            <p class="vk-desc">透過「設定對話」將 AI 的角色鎖定在『學術研究者』，可以極大提升 AI 回答時的精準度與語氣深度，避免其給出過於淺顯的維基百科式回答。回覆內容選擇『較長』，能產出論證更完整、包含完整引文的出處報告。</p>
+          </div>
+          <div class="notebooklm-mock">
+            <div class="mock-header">
+              <span>NotebookLM - 博士級對話設定</span>
+              <span style="color: var(--primary);">👤 角色設定：碩博士研究者 (較長回覆)</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-sidebar">
+                <div class="mock-source-title">已選來源</div>
+                <div class="mock-source-item active">☑ 教科書與綜述文獻</div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-chat-area">
+                  <div class="mock-bubble user">第一問｜歷史脈絡：這個理論出現之前...</div>
+                  <div class="mock-bubble ai">
+                    <strong>[你的主題] 的歷史演進脈絡</strong><br>
+                    - <strong>前身理論：</strong>在 [理論A] 提出前，學界普遍使用 [舊理論] 來解釋此現象...<br>
+                    - <strong>突破點：</strong>奠基者 [學者名] (1995) 認為舊理論無法合理解釋... 因而提出本理論 [1]...
+                  </div>
+                </div>
+                <div class="mock-input-area">
+                  <div class="mock-input">第二問｜理論比較...</div>
+                  <button class="mock-send-btn">&rarr;</button>
+                </div>
+              </div>
+              <div class="mock-studio">
+                <div class="mock-studio-title">Studio 面板</div>
+                <div class="mock-studio-item">自訂報告</div>
+                <div class="mock-studio-item">學習指南</div>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        stepBadge: "Step 6",
+        stepTitle: "知識內化｜填寫自訂學習單與驗證",
+        vkThought: "這一步是將「AI 的內容」轉化為「你自己的知識」的關鍵。請在這裡寫下您自己所研究的任何主題，並試著回答 3 個核心問題，點擊驗證按鈕，系統將自動比對並給予您事實校正與優化建議。",
+        instructions: [
+          "在下方輸入框中輸入您的「自訂主題」與「核心定義」等內容",
+          "點擊「模擬 AI 教授驗證」，系統會執行智慧 fact-check，指出您理解中是否有事實錯誤或概念偏差"
+        ],
+        promptTemplate: `我的理解是：
+[貼上您在學習單中針對自訂主題填寫的答案]
+
+請根據資料幫我檢查：
+1. 有沒有事實上的錯誤？特別是引用奠基者主張的地方
+2. 有沒有重要的遺漏？
+3. 我的理解有沒有偏差或過度簡化的地方？
+4. 有沒有把「主流共識」誤認為「個別研究結論」，或是反過來？
+
+請直接指出問題，不用客氣，並附上對應的來源引用。`,
+        outputContent: `
+          <div class="practice-container">
+            <div class="practice-row">
+              <label class="practice-label">請輸入您的「自訂研究主題」與「核心專有名詞」：</label>
+              <textarea id="temp-q1" class="practice-input" placeholder="例如：依附理論 / 客體關係 / 品牌擴展策略 / 流體力學應用..."></textarea>
+            </div>
+            <div class="practice-row">
+              <label class="practice-label">核心命題 (請用您自己的話簡述這個理論在主張什麼)：</label>
+              <textarea id="temp-q2" class="practice-input" placeholder="請試著回答... (提示：先講這個理論為了解決什麼，核心主張是什麼)"></textarea>
+            </div>
+            <div class="practice-row">
+              <label class="practice-label">與近似理論最大的差別在哪裡？日常最常被誤解之處？</label>
+              <textarea id="temp-q3" class="practice-input" placeholder="請試著回答... (提示：列出一個最容易搞混的相近概念並做比較)"></textarea>
+            </div>
+            <div class="practice-actions">
+              <button class="btn-submit" onclick="simulateVerification('temp')">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                模擬 AI 教授驗證
+              </button>
+              <button class="btn-secondary" onclick="fillDemoAnswers('temp')">填入自訂範例回答</button>
+            </div>
+            <div id="temp-sim-output" class="simulation-output">
+              <div class="sim-header">
+                <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                NotebookLM 指導教授實時反饋
+              </div>
+              <div id="temp-sim-content" class="sim-content"></div>
+            </div>
+          </div>
+        `
+      },
+      {
+        stepBadge: "Step 7",
+        stepTitle: "知識迴旋｜存成筆記建立知識螺旋",
+        vkThought: "單次的研究只是一個剖面，只有當我們建立「知識螺旋」，將今天整理完的筆記轉存為來源，並隨時上傳最新文獻進行對比，我們才能隨著時間累積，真正摸透這個領域並成為專家。",
+        instructions: [
+          "在 NotebookLM 點擊對話旁「儲存為記事」，為筆記命名為「[主題]-我的知識地圖」",
+          "點擊記事卡片右上角 &rarr; 點選「轉成來源」",
+          "未來若看見該主題的新論文或行業報告，直接上傳至同一個筆記本，並發送交叉比對 Prompt"
+        ],
+        promptTemplate: `我上次研究這個主題的筆記已經在來源 (Notes) 裡了。
+現在我加入了一些新的論文／文獻。
+
+請幫我比較：
+1. 跟我上次的知識地圖相比，有什麼新的發現或論點？
+2. 這些新資料會挑戰我之前對核心命題、近似理論比較、或跨領域應用的判斷嗎？
+3. 有沒有我應該特別注意的新爭議或新證據？
+4. 如果我要更新文獻回顧，這幾篇新文獻應該插入哪一節？`,
+        outputContent: `
+          <div class="vk-thought-box" style="margin-top: 1rem;">
+            <div class="vk-title">💡 介面操作引導</div>
+            <p class="vk-desc">NotebookLM 支援將您手動寫下的「筆記(Note)」或者「AI 生成的記事」轉化為「Source(來源)」。當您將筆記轉為來源後，AI 將會在回答中自動引用您的個人筆記與總結。每次有新的論文，AI 都會將其與您既有的知識庫進行比對，形成良性的知識滾動與累積循環。</p>
+          </div>
+          <div class="notebooklm-mock">
+            <div class="mock-header">
+              <span>NotebookLM - 轉成來源與知識螺旋</span>
+              <span style="color: var(--success);">🔄 知識迴旋模式啟動</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-sidebar">
+                <div class="mock-source-title">來源資料 (滾動累積)</div>
+                <div class="mock-source-item">☑ [1] 原本的教科書.pdf</div>
+                <div class="mock-source-item active">☑ [2] 轉化後的個人知識筆記 (Note)</div>
+                <div class="mock-source-item active">☑ [3] [2026年最新發表] 突破論文.pdf</div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-chat-area">
+                  <div class="mock-bubble user">我上次的知識筆記在來源裡了，請幫我比對 2026 最新論文有何突破...</div>
+                  <div class="mock-bubble ai">
+                    <strong>文獻比對與知識螺旋報告</strong><br>
+                    1. <strong>新增論點：</strong>2026 年新論文引進了 [新技術/新機制]，補強了您筆記中第二節關於 [原機理] 的不足 [3]...<br>
+                    2. <strong>理論修正：</strong>新文獻指出 [舊假設] 在特定環境下不成立，會挑戰您在 Note 裡的第三項判斷 [2, 3]...
+                  </div>
+                </div>
+                <div class="mock-input-area">
+                  <div class="mock-input">請幫我修改我的 Note 筆記內容...</div>
+                  <button class="mock-send-btn">&rarr;</button>
+                </div>
+              </div>
+              <div class="mock-studio">
+                <div class="mock-studio-title">Studio 已儲存筆記</div>
+                <div class="mock-studio-item active">📝 ［你的主題］- 理論與前沿筆記</div>
+              </div>
+            </div>
+          </div>
+        `
+      }
+    ]
   }
 };
 
@@ -952,11 +1356,15 @@ function fillDemoAnswers(caseName) {
   if (caseName === 'lean') {
     document.getElementById('lean-q1').value = "精實管理 4.0 與 JJC 是將傳統 TPS 精實管理與數位化技術融合，使用低成本 IoT 發揮現場人員的智慧。JJC 透過自働化停機與 JIT 配送小循環，實時傳送限量資訊。";
     document.getElementById('lean-q2').value = "傳統看板是完全手動的，資訊傳遞有滯後性。JJC 則使用非侵入式感測器實時收集異常與進度，只傳遞關鍵瓶頸資訊，大幅縮短 PDCA 反應時間。";
-    document.getElementById('lean-q3').value = "大眾常以為數位轉型就是無人化黑燈工廠，但學術共識認為完全自動化缺乏彈性，4.0 的核心在於以人為本，用機器智慧成就人的現場改善智慧。";
-  } else {
+    document.getElementById('lean-q3').value = "大眾常以為數位轉型就是無人化黑燈工廠，但學術共識認為完全自動化缺乏彈性， 4.0 的核心在於以人為本，用機器智慧成就人的現場改善智慧。";
+  } else if (caseName === 'video') {
     document.getElementById('video-q1').value = "透過模組化分工：ChatGPT 規劃腳本與分鏡，Kling/Runway 控制相機鏡頭運動生成畫面，ElevenLabs 克隆真人情感聲音做配音，最後在 CapCut 裡將聲音畫面卡點拼裝。";
     document.getElementById('video-q2').value = "黃金3秒鉤子能誘發大腦停止滑動的決策，決定影片會否被滑走；而 0.7s-1.2s 的快速視覺節奏切換，能持續給予視覺多巴胺，拉高留存率以觸發演算法推薦。";
     document.getElementById('video-q3').value = "演算法會限流低原創的純 AI 模板影片，並審查無起伏機械音。創作者應主動標註 AI 標籤，並在腳本策展、情感配音的呼吸感以及動態字幕卡點上手動精細調校。";
+  } else if (caseName === 'temp') {
+    document.getElementById('temp-q1').value = "依附關係理論 (Attachment Theory) / 焦慮型依附、安全型依附";
+    document.getElementById('temp-q2').value = "人類個體在早期與主要照顧者建立的互動經驗，會形塑其內在運作模式，進而影響其成年後的親密關係建立、情緒調節與安全感認知。";
+    document.getElementById('temp-q3').value = "常被與日常的『黏人』或『冷淡』混淆。日常以為黏人就是依附關係差，但學術上焦慮型依附是由於早期照顧者的不一致性反應造成的內在焦慮，是個體的情緒適應機制，而非單純的性格缺點。";
   }
 }
 
@@ -981,7 +1389,7 @@ function simulateVerification(caseName) {
       contentDiv.innerHTML = `
         <div class="sim-point">
           <div class="sim-point-title" style="color:var(--success);">✅ 事實正確性檢查 (Fact-Check)</div>
-          <p>您的理解非常精準！您正確指出 JJC 模式是融合了 JIT 與自働化 (Jidoka) 的小循環，且強調以低成本非侵入感測器傳遞『限量資訊』，此點與楊大和教授在 2021 年奠基論文中的主張完全一致，沒有事實錯誤。</p>
+          <p>您的理解非常精準！您正確指出 JJC 模式是融合了 JIT 與自働化 (Jidoka) 的小循環，且強調以低成本非侵入感測器傳遞『限量資訊』，此點與楊大和教授在 2021 年編寫的論文中的主張完全一致，沒有事實錯誤。</p>
         </div>
         <div class="sim-point">
           <div class="sim-point-title" style="color:var(--warning);">⚠️ 建議深化之處 (Kaizen Suggestion)</div>
@@ -992,7 +1400,7 @@ function simulateVerification(caseName) {
           <p>「數位轉型非純技術無人化，而是人機協同」的主張，可精確引用自 <em>Buer et al. (2018), IJPE</em>。而 JJC 的低成本實施成效，則可引用成大製造管理實驗室在精密機械業的實證研究 <em>(Yang et al., 2023, IEEE TEM)</em>。</p>
         </div>
       `;
-    } else {
+    } else if (caseName === 'video') {
       contentDiv.innerHTML = `
         <div class="sim-point">
           <div class="sim-point-title" style="color:var(--success);">✅ 核心指標掌握檢查 (Fact-Check)</div>
@@ -1005,6 +1413,22 @@ function simulateVerification(caseName) {
         <div class="sim-point">
           <div class="sim-point-title" style="color:var(--secondary);">📖 文獻與行業報告引用</div>
           <p>關於 Pace 視覺節奏與受眾留存率的數據，可引用 <em>TikTok Creator Research (2024)</em> 的官方白皮書；關於 AI 內容限流與 AI 標籤政策，則參考 <em>Meta Creator Policy Guide (2025/2026)</em>。</p>
+        </div>
+      `;
+    } else if (caseName === 'temp') {
+      const topicName = q1Val.split('/')[0].trim();
+      contentDiv.innerHTML = `
+        <div class="sim-point">
+          <div class="sim-point-title" style="color:var(--success);">✅ 自訂主題結構檢查 (Concept Check)</div>
+          <p>您輸入的自訂研究主題是 <strong>『${topicName}』</strong>。您的核心命題回答邏輯完整，針對該理論如何試圖解決核心痛點、提出什麼假設，都有清楚的脈絡說明。</p>
+        </div>
+        <div class="sim-point">
+          <div class="sim-point-title" style="color:var(--warning);">⚠️ 建議深化之處 (Academic Depth)</div>
+          <p>在術語日常與學術辨析中，建議進一步強調該概念的<strong>『核心運行機制 (Operational Mechanism)』</strong>。例如在論文或研究報告中，將其從抽象定義，限縮為可觀測的變項指標，會使得後續的文獻引述更具嚴謹度。</p>
+        </div>
+        <div class="sim-point">
+          <div class="sim-point-title" style="color:var(--secondary);">📖 自訂文獻搜尋提示</div>
+          <p>針對您的自訂主題，在進行 Step 2 Deep Research 時，強烈建議您優先檢索：(1) 該理論創始學者的奠基代表作，以及 (2) 近 3-5 年內引用次數超過 200 次的『文獻回顧 (Review Article)』，這些文獻通常會幫您整理好最完整的爭議點。</p>
         </div>
       `;
     }
