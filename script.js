@@ -3,7 +3,7 @@ const workflowData = {
   // ACADEMIC TRACK CASES
   // ==========================================
   lean: {
-    title: "精實管理 4.0 (成成大楊大和教授 JJC 模式)",
+    title: "精實管理 4.0 (成大楊大和教授 JJC 模式)",
     track: "academic",
     steps: [
       {
@@ -80,7 +80,7 @@ const workflowData = {
 請幫我研究教科書通常會少談、但對深入理解這個主題很重要的內容：
 
 1. 該領域的重要學術文獻：
-   - 被引用次數最高的 5 篇綜述論文 (Review Paper) 或奠基代表論文
+   - 被引用次數最高的 5 篇綜述論文 (Review Paper) 或奠記代表論文
    - 近期最重要的突破性研究與實證案例
    每一篇請附上：主要論點、發表年份、作者、以及 DOI 或連結
 2. 學界目前還在吵什麼（例如：完全自動化黑燈工廠 vs. 簡易智慧化的人機協同爭議、方法論爭議）
@@ -323,7 +323,7 @@ const workflowData = {
       },
       {
         stepBadge: "Step 7",
-        stepTitle: "知識迴旋｜存成筆記建立知識螺旋",
+        stepTitle: "知識螺旋｜存成筆記建立知識螺旋",
         vkThought: "單次的研究只是一個剖面，只有當我們建立「知識螺旋」，將今天整理完的筆記轉存為來源，並隨時上傳最新文獻進行對比，我們才能隨著時間累積，真正摸透這個領域並成為專家。",
         instructions: [
           "在 NotebookLM 點擊對話旁「儲存為記事」，為筆記命名為「精實 4.0-我的知識地圖」",
@@ -430,7 +430,7 @@ const workflowData = {
 
             <h3>3. 發展歷史與學界共識</h3>
             <p><strong>代表學者：</strong>國立成功大學工業設計學系 <strong>洪郁修教授</strong>、Allen Ward、Durward Sobek。</p>
-            <p><strong>學界共識：</strong>精實研發絕非單純的縮短研發進度（Speed），而是要創造一個「能夠不斷再利用的知識庫」。研發的產物不僅是產品本身，更是「創造產品的知識與流程」。</p>
+            <p><strong>學界共識：</strong>精實研發絕非單純的縮短研發進度（Speed），而是要創造一個「能夠不斷再利用的知識庫」。研發的產物僅是產品本身，更是「創造產品的知識與流程」。</p>
           </div>
         `
       },
@@ -527,7 +527,7 @@ const workflowData = {
                   <tr>
                     <td><strong>大部屋</strong><br>(Obeya)</td>
                     <td>大家坐在一起工作的大型開放式辦公室或會議室。</td>
-                    <td>跨部門協作的視覺化管理中心。將關鍵績效、專案路徑圖與阻礙點視覺化張貼在牆面上，以問題為導向推動即時決策。</td>
+                    <td>跨部門協作的視覺化空間。將關鍵績效、專案路徑圖與阻礙點視覺化張貼在牆面上，以問題為導向推動即時決策。</td>
                     <td>日常以為只是辦公室硬體，但學術上它是一種「消除資訊隔閡與延遲」的管理機制與資訊流設計。</td>
                   </tr>
                   <tr>
@@ -544,7 +544,7 @@ const workflowData = {
       },
       {
         stepBadge: "Step 4",
-        stepTitle: "掌握輪廓｜心智圖與資料結構導覽",
+        stepTitle: "掌握輪廓｜利用心智圖展開全貌",
         vkThought: "利用 Studio 的心智圖工具快速看過。它會自動把你的來源庫概念（如商業模式、產品、供應鏈、財務指標）視覺化串接起來，幫助您在大腦中建立全景架構。",
         instructions: [
           "在 Studio 面板點擊心智圖",
@@ -710,7 +710,7 @@ const workflowData = {
       {
         stepBadge: "Step 1",
         stepTitle: "打地基｜建立基礎理解",
-        vkThought: "萬丈高樓平地起。在開始任何新研究時，最忌諱一上來就搜尋全網或混雜多種未篩選的文獻。請先準備 1 至 2 本該學科的標準概論或教科書，將其匯入 NotebookLM 作為唯一來源，以確保 AI 的回答完全基於標準共識。",
+        vkThought: "萬丈高樓平地起。在開始 any 新研究時，最忌諱一上來就搜尋全網或混雜多種未篩選的文獻。請先準備 1 至 2 本該學科的標準概論或教科書，將其匯入 NotebookLM 作為唯一來源，以確保 AI 的回答完全基於標準共識。",
         instructions: [
           "挑選 1-2 份您主題相關的開放授權教科書 (如 OpenStax) 或權威文獻講義",
           "在 NotebookLM 左側來源面板點擊「新增來源」並上傳這些 PDF",
@@ -729,40 +729,6 @@ const workflowData = {
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
             <p class="vk-desc">在左側「來源」面板勾選您的教科書。此時發送對話，NotebookLM 就會<b>百分之百只根據您的教科書內容</b>進行回答，並在回答中附上對應原文的圓形數字角標（引文來源），保證不幻覺。</p>
-          </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - 自訂主題研究地基</span>
-              <span style="color: var(--success);">● 已勾選教科書來源</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-sidebar">
-                <div class="mock-source-title">來源文件 (打地基)</div>
-                <div class="mock-source-item active">☑ [你的主題]教科書.pdf</div>
-                <div class="mock-source-item active">☑ 課程大綱與講義.txt</div>
-              </div>
-              <div class="mock-main">
-                <div class="mock-chat-area">
-                  <div class="mock-bubble user">請完全基於這份教科書內容，為我建立 [你的主題] 的基礎知識框架...</div>
-                  <div class="mock-bubble ai">
-                    <strong>[你的主題] 基礎知識框架 (已生成)</strong><br>
-                    1. <strong>標準定義：</strong>該領域主要指... [1]<br>
-                    2. <strong>核心專有名詞：</strong>[名詞A] 是指...，運作原理為... [2]<br>
-                    3. <strong>主流共識：</strong>學界目前公認... [3]
-                  </div>
-                </div>
-                <div class="mock-input-area">
-                  <div class="mock-input">請為我詳細解釋 [名詞A]...</div>
-                  <button class="mock-send-btn">&rarr;</button>
-                </div>
-              </div>
-              <div class="mock-studio">
-                <div class="mock-studio-title">Studio 面板</div>
-                <div class="mock-studio-item active">簡介文件 (可點擊)</div>
-                <div class="mock-studio-item">學習指南</div>
-                <div class="mock-studio-item">常見問題解答</div>
-              </div>
-            </div>
           </div>
         `
       },
@@ -791,40 +757,6 @@ const workflowData = {
             <div class="vk-title">💡 介面操作引導</div>
             <p class="vk-desc">在網路上搜尋新來源時，切換到 <b>Deep Research 模式</b>。它會自動在後台進行多輪搜尋，篩選數十篇權威文獻，並直接將其彙整成一份報告，連同所有引用的來源網址自動匯入您的來源列表。</p>
           </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - Deep Research 補強搜尋</span>
-              <span style="color: var(--secondary);">🔍 正在執行 Deep Research 搜尋...</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-sidebar">
-                <div class="mock-source-title">來源文件 (已擴充)</div>
-                <div class="mock-source-item">☐ [你的主題]教科書.pdf</div>
-                <div class="mock-source-item active">☑ [網頁] Deep Research 補強報告</div>
-                <div class="mock-source-item active">☑ [論文] Review Paper 1 (2024)</div>
-              </div>
-              <div class="mock-main">
-                <div class="mock-chat-area">
-                  <div class="mock-bubble ai">
-                    <strong>已完成 [你的主題] 針對性文獻補強</strong><br>
-                    已成功抓取並分析 12 個網路權威來源：<br>
-                    - <strong>5篇高引用文獻：</strong>[文獻1] (2023, DOI:xxx)、[文獻2] (2024)...<br>
-                    - <strong>學術爭議：</strong>派別 A 主張...；派別 B 批評其方法論為...<br>
-                    - <strong>大眾誤解：</strong>大眾普遍認為... 但學術論文指出其實是...
-                  </div>
-                </div>
-                <div class="mock-input-area">
-                  <div class="mock-input">請詳細說明 [文獻1] 與教科書定義的差別...</div>
-                  <button class="mock-send-btn">&rarr;</button>
-                </div>
-              </div>
-              <div class="mock-studio">
-                <div class="mock-studio-title">Studio 面板</div>
-                <div class="mock-studio-item">簡介文件</div>
-                <div class="mock-studio-item active">常見問題解答 (更新中)</div>
-              </div>
-            </div>
-          </div>
         `
       },
       {
@@ -841,45 +773,11 @@ const workflowData = {
 請找出 3 至 5 個常被一般人誤解的學術詞彙，這些詞在日常生活中也會用到，但學術用法完全不同。
 
 整理格式：
-| 詞彙 | 日常意思 | 學術意思 | 為什麼容易混淆 |
-
-請聚焦在「日常會用、但學術定義截然不同」的詞，而非純學術專有名詞。如果這個詞在學術領域中有多個分支的不同定義，也請特別標出來。`,
+| 詞彙 | 日常意思 | 學術意思 | 為什麼容易混淆 |`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
             <p class="vk-desc">使用「自訂報告」工具產出的內容，會自動結構化成精緻的文件，並且可以一鍵儲存為筆記（Note）。這非常適合用來做為文獻回顧的基礎名詞解釋草稿。</p>
-          </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - Studio 報告工具</span>
-              <span style="color: var(--primary);">📝 產出自訂報告中...</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-sidebar">
-                <div class="mock-source-title">全部勾選來源</div>
-                <div class="mock-source-item active">☑ 教科書.pdf</div>
-                <div class="mock-source-item active">☑ Deep Research 報告</div>
-              </div>
-              <div class="mock-main">
-                <div class="mock-chat-area">
-                  <div class="mock-bubble ai">
-                    <strong>[自訂報告] 術語陷阱對照表已生成</strong><br>
-                    此報告已儲存至右側的記事。對照表欄位包括：<br>
-                    - [詞彙A]：日常指... 學術指... 混淆原因：...<br>
-                    - [詞彙B]：日常指... 學術指... 混淆原因：...
-                  </div>
-                </div>
-                <div class="mock-input-area">
-                  <div class="mock-input">將此報告儲存為記事...</div>
-                  <button class="mock-send-btn">&rarr;</button>
-                </div>
-              </div>
-              <div class="mock-studio">
-                <div class="mock-studio-title">Studio 面板</div>
-                <div class="mock-studio-item active">自訂報告 (點擊編輯)</div>
-                <div class="mock-studio-item">簡介文件</div>
-              </div>
-            </div>
           </div>
         `
       },
@@ -889,47 +787,13 @@ const workflowData = {
         vkThought: "在問問題前，先看一遍資料全貌。利用 NotebookLM 自動產出的心智圖（Mind Map）工具，將所有子主題與理論關係視覺化展開，這能幫助你釐清核心概念與衍生概念之間的層級關係。",
         instructions: [
           "在 NotebookLM 右側 Studio 面板點選「心智圖 (Mind Map)」",
-          "點擊展開所有分支，花 3-5 分鐘瀏覽所有子節點",
-          "點擊有興趣的節點，AI 會在中間對話面板給予詳細的文獻回答，您可以直接將其儲存為記事"
+          "點擊展開所有分支，花 3-5 分鐘瀏覽所有子節點"
         ],
         promptTemplate: `無（直接點擊 Studio 中的「心智圖」生成即可）`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
             <p class="vk-desc">心智圖是 NotebookLM 最具視覺感的探索工具。它會自動把你的來源庫概念串接起來。看到不懂的節點，直接點擊它，AI 會即時在主視窗中為您解說該節點的內容，免去手動輸入問題的時間。</p>
-          </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - 心智圖工具</span>
-              <span style="color: var(--secondary);">🌿 心智圖已生成</span>
-            </div>
-            <div class="mock-body" style="grid-template-columns: 180px 1fr 240px;">
-              <div class="mock-sidebar">
-                <div class="mock-source-title">來源資料庫</div>
-                <div class="mock-source-item active">☑ 教科書 + 論文庫</div>
-              </div>
-              <div class="mock-main">
-                <div class="mock-chat-area">
-                  <div class="mock-bubble ai">
-                    <strong>您點擊了節點：[核心子命題A]</strong><br>
-                    依據文獻，此概念是指... [1]，常用來解決... [2]。
-                  </div>
-                </div>
-                <div class="mock-input-area">
-                  <span style="font-size:0.75rem; color:var(--text-muted);">💡 點擊心智圖節點進行快速探索</span>
-                </div>
-              </div>
-              <div class="mock-studio" style="background:#131822;">
-                <div class="mock-studio-title">Studio 心智圖檢視</div>
-                <div class="mock-studio-item active">🌿 [你的主題]
-                  <div style="font-size:0.7rem; color:var(--text-muted); padding-left:0.5rem;">
-                    ├─ 核心概念
-                    ├─ 發展歷史
-                    └─ 理論爭議
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         `
       },
@@ -948,8 +812,7 @@ const workflowData = {
 從歷史脈絡切入 [你的主題]：
 1. 這個理論出現之前，學界用什麼解釋同一個現象？
 2. 奠基者為什麼覺得既有解釋不夠，需要提出新理論？他做了什麼關鍵研究來支持新主張？
-3. 這個理論被廣泛接受之後，有沒有發生過重大修正或學派分裂？是因為什麼新證據或新批評？
-4. 近 20 年的研究方向跟最初的版本差在哪？
+3. 近 20 年的研究方向跟最初的版本差在哪？
 
 第二問｜理論比較：
 針對 [你的主題]，請從匯入的資料中，找出 2 至 3 個最常被學界拿來跟它對照比較的近似理論。每個理論請說明：
@@ -960,44 +823,13 @@ const workflowData = {
 
 第三問｜應用與爭議：
 針對 [你的主題]：
-1. 這個理論已經被應用到哪些原本學科以外的領域？每個應用領域請說明引用方式與接受度。
+1. 這個理論已經被應用到哪些原本學科以外的領域？
 2. 學界目前的主要爭議與未解問題有哪些？
 3. 我要用 3 分鐘跟一個完全不熟 [你的主題] 的朋友介紹這個理論。請幫我整理口語化的開場、重點與常見誤解。`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">透過「設定對話」將 AI 的角色鎖定在『學術研究者』，可以極大提升 AI 回答時的精準度與語氣深度，避免其給出過於淺顯的維基百科式回答。回覆內容選擇『較長』，能產出論證更完整、包含完整引文的出處報告。</p>
-          </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - 博士級對話設定</span>
-              <span style="color: var(--primary);">👤 角色設定：碩博士研究者 (較長回覆)</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-sidebar">
-                <div class="mock-source-title">已選來源</div>
-                <div class="mock-source-item active">☑ 教科書與綜述文獻</div>
-              </div>
-              <div class="mock-main">
-                <div class="mock-chat-area">
-                  <div class="mock-bubble user">第一問｜歷史脈絡：這個理論出現之前...</div>
-                  <div class="mock-bubble ai">
-                    <strong>[你的主題] 的歷史演進脈絡</strong><br>
-                    - <strong>前身理論：</strong>在 [理論A] 提出前，學界普遍使用 [舊理論] 來解釋此現象...<br>
-                    - <strong>突破點：</strong>奠基者 [學者名] (1995) 認為舊理論無法合理解釋... 因而提出本理論 [1]...
-                  </div>
-                </div>
-                <div class="mock-input-area">
-                  <div class="mock-input">第二問｜理論比較...</div>
-                  <button class="mock-send-btn">&rarr;</button>
-                </div>
-              </div>
-              <div class="mock-studio">
-                <div class="mock-studio-title">Studio 面板</div>
-                <div class="mock-studio-item">自訂報告</div>
-                <div class="mock-studio-item">學習指南</div>
-              </div>
-            </div>
+            <p class="vk-desc">透過「設定對話」將 AI 的角色鎖定在『學術研究者』，可以極大提升 AI 回答時的精準度與語氣深度，避免其給出過於淺顯的維基百科式回答。</p>
           </div>
         `
       },
@@ -1013,12 +845,9 @@ const workflowData = {
 [貼上您在學習單中針對自訂主題填寫的答案]
 
 請根據資料幫我檢查：
-1. 有沒有事實上的錯誤？特別是引用奠基者主張的地方
+1. 有沒有事實上的錯誤？
 2. 有沒有重要的遺漏？
-3. 我的理解有沒有偏差或過度簡化的地方？
-4. 有沒有把「主流共識」誤認為「個別研究結論」，或是反過來？
-
-請直接指出問題，不用客氣，並附上對應的來源引用。`,
+3. 我的理解有沒有偏差或過度簡化的地方？`,
         outputContent: `
           <div class="practice-container">
             <div class="practice-row">
@@ -1059,8 +888,7 @@ const workflowData = {
           "點擊記事卡片右上角 &rarr; 點選「轉成來源」",
           "未來若看見該主題的新論文或行業報告，直接上傳至同一個筆記本，並發送交叉比對 Prompt"
         ],
-        promptTemplate: `我上次研究這個主題的筆記已經在來源 (Notes) 裡了。
-現在我加入了一些新的論文／文獻。
+        promptTemplate: `我上次研究這個主題的筆記已經在來源 (Notes) 裡了。現在我加入了一些新的論文／文獻。
 
 請幫我比較：
 1. 跟我上次的知識地圖相比，有什麼新的發現或論點？
@@ -1070,39 +898,7 @@ const workflowData = {
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">NotebookLM 支援將您手動寫下的「筆記(Note)」或者「AI 生成的記事」轉化為「Source(來源)」。當您將筆記轉為來源後，AI 將會在回答中自動引用您的個人筆記與總結。每次有新的論文，AI 都會將其與您既有的知識庫進行比對，形成良性的知識滾動與累積循環。</p>
-          </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - 轉成來源與知識螺旋</span>
-              <span style="color: var(--success);">🔄 知識迴旋模式啟動</span>
-            </div>
-            <div class="mock-body">
-              <div class="mock-sidebar">
-                <div class="mock-source-title">來源資料 (滾動累積)</div>
-                <div class="mock-source-item">☑ [1] 原本的教科書.pdf</div>
-                <div class="mock-source-item active">☑ [2] 轉化後的個人知識筆記 (Note)</div>
-                <div class="mock-source-item active">☑ [3] [2026年最新發表] 突破論文.pdf</div>
-              </div>
-              <div class="mock-main">
-                <div class="mock-chat-area">
-                  <div class="mock-bubble user">我上次的知識筆記在來源裡了，請幫我比對 2026 最新論文有何突破...</div>
-                  <div class="mock-bubble ai">
-                    <strong>文獻比對與知識螺旋報告</strong><br>
-                    1. <strong>新增論點：</strong>2026 年新論文引進了 [新技術/新機制]，補強了您筆記中第二節關於 [原機理] 的不足 [3]...<br>
-                    2. <strong>理論修正：</strong>新文獻指出 [舊假設] 在特定環境下不成立，會挑戰您在 Note 裡的第三項判斷 [2, 3]...
-                  </div>
-                </div>
-                <div class="mock-input-area">
-                  <div class="mock-input">請幫我修改我的 Note 筆記內容...</div>
-                  <button class="mock-send-btn">&rarr;</button>
-                </div>
-              </div>
-              <div class="mock-studio">
-                <div class="mock-studio-title">Studio 已儲存筆記</div>
-                <div class="mock-studio-item active">📝 ［你的主題］- 理論與前沿筆記</div>
-              </div>
-            </div>
+            <p class="vk-desc">NotebookLM 支援將您手動寫下的「筆記(Note)」或者「AI 生成的記事」轉化為「Source(來源)」。</p>
           </div>
         `
       }
@@ -1118,93 +914,58 @@ const workflowData = {
     steps: [
       {
         stepBadge: "Step 0",
-        stepTitle: "初始化環境｜繁中設定與建立筆記",
-        vkThought: "產業研究需要處理大量外文分析報告，第一步在 NotebookLM 中先做好繁體中文輸出設定，能確保所有預設生成的雙人語音對談或簡介皆為高品質的繁中，加速後續解讀效率。",
+        stepTitle: "記錄初始環境",
+        vkThought: "產業研究第一步在 NotebookLM 中做好繁體中文輸出設定，能確保所有自動生成的對話皆為高品質繁中，加速後續解讀效率。",
         instructions: [
-          "登入 notebooklm.google.com 進入主控台",
-          "點選右上角「設定」圖示 &rarr; 「輸出語言」 &rarr; 選擇「中文 (繁體)」",
-          "點選「＋ 新建」建立全新的筆記本，並命名為「台積電 (TSMC) 深度產業研究」"
+          "設定輸出語言為「中文 (繁體)」",
+          "建立新筆記本，命名為「台積電 (TSMC) 深度產業研究」"
         ],
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">完成輸出語言設定後，NotebookLM 便會自動將英文文獻、法說逐字稿中的關鍵數據與專業評論，統一以流暢的繁體中文呈現，這對後續理解專門半導體研究尤為重要。</p>
-          </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - 初始化工作區</span>
-              <span style="color: var(--primary);">● 語言設定：中文（繁體）</span>
-            </div>
-            <div class="mock-body" style="grid-template-columns: 1fr;">
-              <div style="padding: 2rem; text-align: center; color: var(--text-secondary);">
-                <div style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">🎉 筆記本已成功建立</div>
-                <div>名稱：「台積電 (TSMC) 深度產業研究」</div>
-                <div style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">請繼續執行 Step 1 進行 Deep Research 起步！</div>
-              </div>
-            </div>
+            <p class="vk-desc">初始化完成後，系統會自動在讀取英文分析報告時將其翻譯為流暢繁中。</p>
           </div>
         `
       },
       {
         stepBadge: "Step 1",
         stepTitle: "打地基｜用 Deep Research 建立起步報告",
-        vkThought: "完全陌生的公司，不要盲目去 Google 搜新聞。這一步我們使用 NotebookLM 的網路搜尋功能搭配 Deep Research 模式。輸入結構化的 Prompt，讓 AI 跑多輪搜尋，幫我們把台積電的核心業務、代工模式、晶圓製程做成第一份「起步報告」，自動匯入為來源。",
+        vkThought: "這一步我們使用 NotebookLM 的網路搜尋功能搭配 Deep Research 模式。輸入結構化的 Prompt，讓 AI 跑多輪搜尋，幫我們把台積電的核心業務、代工模式、晶圓製程做成第一份「起步報告」，自動匯入為來源。",
         instructions: [
-          "點選左側「新增來源」 &rarr; 選擇「網路上搜尋」 &rarr; 切換至「Deep Research」模式",
+          "點選「新增來源」 &rarr; 選擇「網路上搜尋」 &rarr; 切換至「Deep Research」模式",
           "複製下方起步 Prompt 貼入搜尋對話框發送",
-          "等待約 3 分鐘，AI 寫完的長篇報告與其引用的十多個權威網址會自動成為本筆記本的 Sources"
+          "等待約 3 分鐘，AI 寫完的長篇報告會自動成為本筆記本的 Sources"
         ],
         promptTemplate: `我想深入了解 [台積電 (TSMC)] 這家公司。請幫我研究：
 1. 這家公司的核心業務和主要產品 (如先進製程 3nm, 5nm)
 2. 他們的商業模式（怎麼賺錢、誰是客戶）
-3. 在產業中的競爭地位和主要競爭者 (如 Samsung, Intel)
+3. 在產業中的競爭地位和主要競爭者
 4. 創立背景和重要的發展轉折點 (張忠謀的純代工決策)
 5. 近期的重大策略方向 (如 CoWoS 先進封裝擴產、海外設廠)
-6. 這家公司所處的半導體產業基本運作方式（上 upstream 設計、中游製造代工、下游封測）
+6. 這家公司所處的半導體產業基本運作方式
 
-請主要基於有深度分析、有具體數據的資料，不要放入只有基本介紹的短篇百科。請附上資料來源連結。`,
+請主要基於有深度分析、有具體數據的資料。請附上資料來源連結。`,
         outputContent: `
           <div class="output-card">
-            <h3>1. 核心業務與製程數據</h3>
-            <p><strong>台積電 (TSMC)</strong> 是全球晶圓代工市場霸主。先進製程（指 7 奈米及以下製程）營收佔比已超過 60%，其中 3 奈米與 5 奈米製程為營收主力，主要供應 Apple (iPhone/Mac 晶片) 與 NVIDIA (AI H100/Blackwell 晶片)。其全球晶圓代工市佔率突破 60%，在先進製程領域市佔率更超過 90%。</p>
-            
-            <h3>2. 商業模式與創辦背景</h3>
-            <p><strong>純代工模式 (Pure-Play Foundry)：</strong>由張忠謀博士於 1987 年創立，承諾『絕不設計晶片、絕不與客戶競爭』。此一決定顛覆了當時以 Intel、TI 等兼具設計與製造的 IDM 模式，讓晶片設計公司能輕資產營運，成功綁定全球無廠設計商 (Fabless) 生態圈。</p>
+            <h3>1. 先進製程晶圓市佔</h3>
+            <p><strong>台積電 (TSMC)</strong> 先進製程（7奈米及以下）營收佔比已超過 60%，其中 3 奈米與 5 奈米製程為營收主力，主要供應 Apple 與 NVIDIA。其全球先進晶圓代工市佔率突破 90%，擁有絕對市場主導權。</p>
           </div>
         `
       },
       {
         stepBadge: "Step 2",
         stepTitle: "清理戰場｜篩選高品質來源與補充 IR 資料",
-        vkThought: "Deep Research 抓取的網頁可能有廣告或重複資訊。我們要「清理戰場」，移除無效網頁，並「手動補充」台積電的法說會簡報（Investor Relations Deck）、年報、以及 Morris Chang 在工研院的公開演講 YouTube 連結。這些第一手資料能保證研究的絕對事實正確性。",
+        vkThought: "Deep Research 抓取的網頁可能有廣告。我們要「清理戰場」，移除無效網頁，並「手動補充」台積電的法說會簡報、年報、以及Morris Chang的YouTube訪談連結。這能保證事實的絕對精確。",
         instructions: [
-          "檢查左側 Sources 列表，將少於 500 字、充斥廣告或內容重複的網頁來源移除 (按垃圾桶)",
-          "點選「新增來源」 &rarr; 選擇「上傳檔案」 &rarr; 上傳台積電最新一季的「法說會簡報 PDF」與「年報 PDF」",
-          "點選「新增來源」 &rarr; 選擇「YouTube 連結」 &rarr; 貼上張忠謀創始人專訪等 YouTube URL"
+          "檢查 Sources 列表，將少於 500 字的網頁來源移除",
+          "點選「新增來源」上傳台積電最新一季的「法說會簡報 PDF」與「年報 PDF」",
+          "點選「新增來源」貼上張忠謀專訪 YouTube URL"
         ],
-        promptTemplate: `無（本步驟為來源篩選與手動補充 IR、年報、YouTube 訪談檔案，無需發送 Prompt）`,
+        promptTemplate: `無`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">在左側來源清單中，您會看到上傳的 'TSMC_Q3_Earnings_Presentation.pdf' 與 '張忠謀演講_YouTube'。NotebookLM 會自動擷取 YouTube 的字幕逐字稿，這會讓後續關於「護城河」與「地緣政治挑戰」的對話極其精準且有憑有據。</p>
-          </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - 清理戰場與第一手資料導入</span>
-              <span style="color: var(--success);">● 來源庫已完成優化</span>
-            </div>
-            <div class="mock-body" style="grid-template-columns: 240px 1fr;">
-              <div class="mock-sidebar" style="border-right:1px solid var(--border-glass);">
-                <div class="mock-source-title">高品質來源清單 (12)</div>
-                <div class="mock-source-item active">☑ [網頁] Deep Research 報告</div>
-                <div class="mock-source-item active">☑ [PDF] TSMC 最新季報.pdf</div>
-                <div class="mock-source-item active">☑ [YT] 張忠謀 Morris Chang 訪談</div>
-              </div>
-              <div class="mock-main" style="padding:1.5rem; color:var(--text-secondary);">
-                <h3>戰場清理完成！</h3>
-                <p>已排除低價值輿情噪音，保留台積電官方年報、財務報表與創辦人訪談。這能確保我們在 Step 3 提煉的術語以及 Step 5 進行的商業模型問答具有百分之百的學術與產業嚴謹度。</p>
-              </div>
-            </div>
+            <p class="vk-desc">在來源清單中確保上傳官方年報與YouTube訪談。這能確保我們在後續商業模型問答具有百分之百的嚴謹度。</p>
           </div>
         `
       },
@@ -1219,11 +980,8 @@ const workflowData = {
         promptTemplate: `請幫我整理這些來源資料中出現的 [台積電與先進製程] 相關核心術語，包含英文原文和中文解釋。
 
 整理格式：
-- 術語（英文原文）：一句話解釋這是什麼，並說明其在台積電代工中的運作機制
-- 特別標註在產業分析或投資研究中最常出現的關鍵字 (如 CoWoS, EUV, OIP)
-- 如果有縮寫，請附上全稱
-
-請按照「理解這個產業必須知道的」優先程度排序。`,
+- 術語（英文原文）：與其在台積電代工中的運作機制
+- 特別標註關鍵字 (如 CoWoS, EUV, OIP)`,
         outputContent: `
           <div class="output-card">
             <h3>台積電先進製程術語表</h3>
@@ -1231,17 +989,7 @@ const workflowData = {
               <div class="term-card">
                 <div class="term-word">晶圓級封裝 (CoWoS)</div>
                 <div class="term-meta">Chip-on-Wafer-on-Substrate</div>
-                <div class="term-desc">將 GPU/CPU 晶片與高頻寬記憶體 (HBM) 封裝在同一個矽中介層上，突破物理空間限制。是當前 AI 晶片效能提升的最核心瓶頸技術。</div>
-              </div>
-              <div class="term-card">
-                <div class="term-word">開放創新平台 (OIP)</div>
-                <div class="term-meta">Open Innovation Platform</div>
-                <div class="term-desc">台積電建立的設計生態系。整合了 EDA 軟體、IP 設計授權、以及製造參數，使客戶如 Apple, NVIDIA 能像拼積木一樣快速設計晶片，構成強大壁壘。</div>
-              </div>
-              <div class="term-card">
-                <div class="term-word">極紫外光微影 (EUV)</div>
-                <div class="term-meta">Extreme Ultraviolet Lithography</div>
-                <div class="term-desc">使用 13.5nm 極短波長光線在晶圓上刻出微小電路。台積電是全球最大的 EUV 曝光機機隊擁有者，奠定了其先進製程霸主地位。</div>
+                <div class="term-desc">將晶片直接堆疊封裝在矽中介層上。這是解決 AI 晶片高頻寬記憶體傳輸瓶頸的關鍵封裝技術。</div>
               </div>
             </div>
           </div>
@@ -1253,52 +1001,20 @@ const workflowData = {
         vkThought: "先看一遍心智圖展開的全貌。在 NotebookLM 中，自動生成的「心智圖 (Mind Map)」和「簡介文件 (Briefing Document)」是掌握全局的極佳工具。我們花幾分鐘探索它，看看除了代工外，AI 是否也幫我們抓出了設備商 ASML 或地緣政治政策的相對關係。",
         instructions: [
           "在 NotebookLM 點擊右側 Studio 面板 &rarr; 點擊「心智圖 (Mind Map)」",
-          "把所有子節點展開，快速瀏覽所有分支，看看是否有你未曾考慮過的供應鏈關係"
+          "展開所有分支進行瀏覽"
         ],
-        promptTemplate: `無（直接點擊 Studio 中的「心智圖」與「簡介文件」生成即可）`,
+        promptTemplate: `無`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">點擊心智圖中的 'EUV 供應商 ASML' 或 '地緣政治分散風險' 節點，NotebookLM 會自動將這些關聯論文的脈絡抽出來，在對話框裡做成摘要，幫您快速掌握半導體產業生態圈的全局架構。</p>
-          </div>
-          <div class="notebooklm-mock">
-            <div class="mock-header">
-              <span>NotebookLM - 台積電產業心智圖</span>
-              <span style="color: var(--secondary);">🌿 結構分支圖已建立</span>
-            </div>
-            <div class="mock-body" style="grid-template-columns: 180px 1fr 240px;">
-              <div class="mock-sidebar">
-                <div class="mock-source-title">來源資料庫</div>
-                <div class="mock-source-item active">☑ 台積電年報.pdf</div>
-                <div class="mock-source-item active">☑ Q3法說會簡報.pdf</div>
-              </div>
-              <div class="mock-main">
-                <div class="mock-chat-area">
-                  <div class="mock-bubble ai">
-                    <strong>您點選了節點：[護城河 - 開放創新平台 OIP]</strong><br>
-                    依據來源，OIP 包含了超過 12,000 個 IP 模組，讓 NVIDIA 等大廠可以像樂高積木一樣快速拼裝晶片，直接相容台積電的 3nm 製程，這使客戶很難跳槽到三星或 Intel。
-                  </div>
-                </div>
-              </div>
-              <div class="mock-studio" style="background:#131822;">
-                <div class="mock-studio-title">Studio 心智圖檢視</div>
-                <div class="mock-studio-item active">🌿 台積電研究
-                  <div style="font-size:0.7rem; color:var(--text-muted); padding-left:0.5rem;">
-                    ├─ 專業晶圓代工 (Foundry)
-                    ├─ 先進技術 (EUV, CoWoS)
-                    ├─ 護城河 (OIP 生態系)
-                    └─ 跨國建廠風險 (美、日、德)
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p class="vk-desc">展開心智圖中的護城河節點，NotebookLM 會自動將供應鏈脈絡抽出來，在對話框裡做成摘要。</p>
           </div>
         `
       },
       {
         stepBadge: "Step 5",
         stepTitle: "建構地圖｜大中小顆粒度三連問",
-        vkThought: "主角是台積電，主線是它如何靠專業代工模式與先進製程技術成為全球晶片霸主。這裡我們透過設定角色，讓 AI 成為資深產業投資分析師，並依序送出大、中、小顆粒度提問，把台積電的護城河脈絡完全理清。",
+        vkThought: "設定角色為半導體資深投資分析師，依序發送大、中、小顆粒問題，理清台積電專業代工的商業飛輪與護城河。",
         instructions: [
           "設定對話角色：點選對話框右上角「設定對話」 &rarr; 設定為「半導體產業與科技投資分析師，回覆較長且詳實」",
           "在對話框中，依序發送大、中、小顆粒度提問，並閱讀產出內容"
@@ -1313,25 +1029,17 @@ const workflowData = {
 
 中顆粒｜商業邏輯與轉折時刻：
 針對 [台積電 (TSMC)] 的主角：
-1. 它的核心商業邏輯是什麼？如何把「只代工不設計」的承諾轉化為龐大的營收？
-2. 一路走到今天，面臨過哪些關鍵的轉折時刻？（例如：決定拒絕與客戶競爭、引進 EUV 技術、投入 CoWoS 先進封裝）
+1. 它的核心商業邏輯是什麼？
+2. 一路走到今天，面臨過哪些關鍵的轉折時刻？（例如決定引進 EUV 技術、投入 CoWoS 先進封裝）
 3. 這些關鍵決定為什麼是對的？奠定了什麼護城河？
 
 小顆粒｜用 30 秒講給朋友聽：
 我要用 30 秒跟一個完全沒有科技背景的朋友介紹 [台積電 (TSMC)] 最厲害的地方。
-請幫我整理：
-1. 一句話開場：用什麼有趣的鉤子（Hook）最能吸引人？
-2. 三個核心重點：講哪三件事最能讓朋友抓到台積電的護城河？
-3. 一句話收尾：講完之後留下什麼結論讓人記得？
-請用口語化、說故事的語氣，不要用簡報條列式語氣。`,
+請口語化說明。`,
         outputContent: `
           <div class="output-card">
-            <h3>真實成果：產業分析師對話紀錄片段</h3>
-            <p><strong>第一問（起步與差別）回答節錄：</strong><br>
-            「在 1987 年，所有半導體公司都兼做晶片設計與製造（即 IDM 模式）。張忠謀看到了晶片設計高昂的固定資產投資門檻，大膽創立了『只代工、不競爭』的台積電。這讓晶片設計創業家（如黃仁勳創立的 NVIDIA）可以專注於設計，把最昂貴的工廠投資交給台積電，奠定了輕資產的 Fabless 時代。」</p>
-            
-            <p><strong>第二問（護城河關鍵）回答節錄：</strong><br>
-            「台積電的護城河不在單一的技術，而是『規模效應』與『信任』構成的良性循環：代工量愈大 &rarr; 良率與製程演進愈快 &rarr; 晶片成本降低 &rarr; 吸納更多大客戶 &rarr; 營收盈餘投入研發 &rarr; 技術領先。這個飛輪一旦轉起來，市佔率破 9 成，對手便難以望其項背。」</p>
+            <h3>分析師三連問解答片段</h3>
+            <p>台積電的飛輪是：大規模量產 &rarr; 提高良率與產能 &rarr; 客戶信任度增加並降低成本 &rarr; 將獲利投入下一代 GAA 與先進封裝研發。這個飛輪使其他競爭者（如 Samsung、Intel）在製程落後與資本支出上被遠遠拋在後方。</p>
           </div>
         `
       },
@@ -1347,9 +1055,8 @@ const workflowData = {
 [貼上您在學習單中填寫的台積電回答]
 
 請根據資料幫我檢查：
-1. 有沒有事實上的錯誤？特別是關於代工商業模式與 OIP 的地方
-2. 有沒有重要的遺漏？
-3. 我的理解有沒有偏差或過度簡化？`,
+1. 有沒有事實上的錯誤？
+2. 有沒有重要的遺漏？`,
         outputContent: `
           <div class="practice-container">
             <div class="practice-row">
@@ -1384,56 +1091,43 @@ const workflowData = {
       {
         stepBadge: "Step 7",
         stepTitle: "知識螺旋｜建立季度法說追蹤螺旋",
-        vkThought: "一次性研究是不夠的。我們把今天整理的「台積電護城河與海外風險」存為記事並轉成「來源 (Notes)」。下一次台積電召開最新的法說會（或發布最新季報）時，直接上傳最新簡報 PDF，發送對話讓 AI 比對最新變化，這就是知識的持續累積與演進。",
+        vkThought: "一次性研究是不夠的。我們把今天整理的「台積電護城河與海外風險」存為記事並轉成「來源 (Notes)」。下一次台積電召開最新的法說會時，直接上傳最新簡報 PDF，發送對話讓 AI 比對最新變化，這就是知識的持續累積與演進。",
         instructions: [
           "在 NotebookLM 點擊對話旁的「儲存為記事」，命名為「台積電護城河與地緣政治」",
           "點擊記事右上角選單 &rarr; 「轉成來源」",
-          "當未來有最新法說會簡報 (法說會 PPT) 或新聞時直接上傳，並使用下方 Prompt 進行分析比對"
+          "有最新法說會簡報時直接上傳，並使用下方 Prompt 進行分析比對"
         ],
-        promptTemplate: `我之前關於台積電商業護城河與海外建廠風險的筆記已經在來源 (Notes) 中。
-現在我上傳了最新的台積電 [例如：2026年最新一季法說會簡報 PDF]。
+        promptTemplate: `我之前關於台積電商業護城河的筆記已經在來源 (Notes) 中。
+現在我上傳了最新的台積電法說會簡報 PDF。
 請幫我分析：
-1. 最新財報數據（營收、毛利率）與先前我筆記中的預估有何差異？是否維持在 53% 毛利率水準？
-2. 在先進封裝 CoWoS 的產能上，法說會有透露新的擴產進度或新的客戶合作消息嗎？
-3. 地緣政治風險與海外廠建置進度有新的調整嗎？
-4. 請幫我更新我舊的知識地圖。`,
+1. 最新財報數據與先前我筆記中的預估有何差異？
+2. 在先進封裝 CoWoS 的產能上，法說會有透露新的擴產進度嗎？
+3. 地緣政治風險與海外廠建置進度有新的調整嗎？`,
         outputContent: `
           <div class="output-card">
-            <h3>真實成果：知識庫更新對照示例 (加入最新法說會簡報後)</h3>
-            <p><strong>新加入來源：</strong><em>TSMC Q3 2025 Earnings Call Presentation.pdf</em></p>
-            
-            <div class="vk-thought-box">
-              <div class="vk-title">
-                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                NotebookLM 比對分析結果：
-              </div>
-              <p class="vk-desc">「與您在來源中的基礎筆記相比，最新季報顯示了以下重大調整：<br><br>
-              <strong>1. 獲利表現超預期：</strong>本季毛利率升至 57.8%（高於先前筆記所記的長期目標 53%），主要得益於 3nm 先進製程佔營收比重已達 32% 及產能利用率滿載。<br><br>
-              <strong>2. 先進封裝產能追趕：</strong>台積電透露將於 2026 年進一步擴充 CoWoS 產能，除了原台灣封測廠外，不排除在海外評估後段封裝合作，以減緩 AI 晶片供不應求的局面。<br><br>
-              <strong>3. 海外建廠時程：</strong>美國廠第二期 2 奈米廠建置進度超前，預計可於 2026 年底進行試產，舒緩了先前筆記中提及的文化摩擦延遲風險。」</p>
-            </div>
+            <h3>知識螺旋更新示例</h3>
+            <p>最新法說會顯示，儘管海外廠成本侵蝕，其 3nm 營收強勁與產能稼動率高，仍將毛利率穩定維持在 57% 以上，超出市場預期的 53% 防線。</p>
           </div>
         `
       }
     ]
   },
   innolux: {
-    title: "產業轉型升級案例：群創光電 (Innolux) 扇出型面板級封裝 (FOPLP) 轉型",
+    title: "產業轉型升級案例：群創 (Innolux) 扇出型面板級封裝 (FOPLP) 轉型",
     track: "industry",
     steps: [
       {
         stepBadge: "Step 0",
-        stepTitle: "環境準備｜繁中設定與建立工作區",
+        stepTitle: "環境準備",
         vkThought: "面板廠跨界封裝是極為前沿的工程管理案例。我們在 NotebookLM 做好繁體中文輸出設定，以利後續自動解讀大面積曝光與半導體封裝重疊的物理學術文獻。",
         instructions: [
-          "登入 notebooklm.google.com",
-          "點選右上角「設定」 &rarr; 選擇「輸出語言」為「中文 (繁體)」",
+          "設定輸出語言為「中文 (繁體)」",
           "建立新筆記本，命名為「群創光電 (Innolux) FOPLP 先進封裝轉型研究」"
         ],
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">實施初始化完成後，系統會自動在讀取英文封裝標準（如 IEEE 論文）時，將大面積玻璃基板、熱膨脹係數 (CTE) 等難懂字詞，統一翻譯為精準的繁體中文學術語彙。</p>
+            <p class="vk-desc">完成後，英文 FOPLP 論文細節將被自動翻譯為流暢繁中語彙。</p>
           </div>
         `
       },
@@ -1444,35 +1138,32 @@ const workflowData = {
         instructions: [
           "點選左側「新增來源」 &rarr; 選擇「網路上搜尋」 &rarr; 切換至「Deep Research」模式",
           "複製下方起步 Prompt 貼入搜尋框",
-          "等待 3 分鐘，AI 寫完的長篇報告與其引用的多個權威網址會自動匯入為 Sources"
+          "等待 3 分鐘，AI 寫完的長篇報告會自動匯入為 Sources"
         ],
         promptTemplate: `我想深入了解 [群創光電 (Innolux)] 近年在半導體封裝上的重大轉型。請幫我研究：
 1. 群創傳統核心液晶面板業務與面臨的面板價格循環痛點
 2. 什麼是「扇出型面板級封裝 (FOPLP)」？技術原理為何？
-3. 面板廠為什麼空有龐大的舊世代面板廠房 (3.5代廠)？他們是怎麼把面板曝光設備與無塵室改造為半導體先進封裝線的？
-
-請主要基於有深度分析、有具體數據的資料，不要放入只有基本介紹的短篇百科。請附上資料來源連結。`,
+3. 面板廠如何把面板曝光設備與無塵室改造為半導體先進封裝線？`,
         outputContent: `
           <div class="output-card">
-            <h3>1. 群創液晶面板業務背景與痛點</h3>
-            <p><strong>群創光電 (Innolux)</strong> 是全球液晶顯示面板（TFT-LCD）的龍頭大廠之一。受限於面板價格循環高資本、高波動的痛點，極易受競爭對手價格戰衝擊。為活化折舊完畢的舊世代面板廠房房舍與設備，群創決定切入半導體先進封裝領域，研發方形玻璃基板 FOPLP 技術，尋求第二成長曲線。</p>
+            <h3>1. 液晶面板週期痛點</h3>
+            <p><strong>群創光電 (Innolux)</strong> 面臨傳統液晶面板週期高資本、高波動的困境。為活化已折舊完畢的 3.5 代舊面板線，群創策略性切入半導體 FOPLP 封裝，尋找新的高毛利應用。</p>
           </div>
         `
       },
       {
         stepBadge: "Step 2",
         stepTitle: "清理戰場｜篩選來源與手動補充",
-        vkThought: "群創是如何化腐朽為神奇，將做面板的舊工廠改造成做半導體 AI 晶片先進封裝的基地？這一步我們清理戰場，剔除重複新聞，並手動上傳群創的法說會簡報（Investor Presentation）與國際半導體展上的 FOPLP 白皮書技術論文 PDF。",
+        vkThought: "群創是如何化腐朽為神奇，將做面板的舊工廠改造成做半導體 AI 晶片先進封裝的基地？這一步我們清理戰場，剔除重複新聞，並手動上傳群創的法說會簡報與國際半導體展上的 FOPLP 白皮書技術論文 PDF。",
         instructions: [
-          "排除小於 500 字、缺乏數據的純股票評論網頁",
-          "點選「新增來源」 &rarr; 選擇「上傳檔案」 &rarr; 上傳群創法說會報告 PDF 與大面積玻璃基板封裝的最新 IEEE 技術論文",
-          "補充群創高層接受財經媒體專訪的影音 URL"
+          "排除小於 500 字的純股票評論網頁",
+          "上傳群創法說會報告 PDF 與大面積玻璃基板封裝的最新 IEEE 技術論文"
         ],
-        promptTemplate: '無（本步驟為來源篩選與手動補充，無需發送 Prompt）',
+        promptTemplate: '無',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">在 Sources 列表中，確保勾選了上傳的 'Innolux_Investor_Meeting.pdf' 與半導體封裝論文。這能保證 AI 在接下來的術語整理與大中小提問中，能精準引用面板廠與先進封裝廠的物理參數。</p>
+            <p class="vk-desc">在來源清單中確保上傳官方年報與YouTube訪談。</p>
           </div>
         `
       },
@@ -1486,11 +1177,7 @@ const workflowData = {
         ],
         promptTemplate: `針對 [群創轉型 FOPLP 面板級封裝] 領域，請幫我整理這些來源資料中的核心術語。
 
-請找出 3 至 5 個常被一般人或媒體混淆的術語 (如 FOPLP, Glass Substrate, Warping, RDL)。
-
-整理格式：
-- 術語（英文原文）：一句話解釋這是什麼，並說明其在面板級先進封裝中的運作機制
-- 如果有縮寫，請附上全稱`,
+請找出 3 至 5 個常被混淆的術語 (如 FOPLP, Glass Substrate, Warping, RDL)。`,
         outputContent: `
           <div class="output-card">
             <h3>群創 FOPLP 先進封裝術語表</h3>
@@ -1498,17 +1185,7 @@ const workflowData = {
               <div class="term-card">
                 <div class="term-word">面板級封裝 (FOPLP)</div>
                 <div class="term-meta">Fan-out Panel-Level Packaging</div>
-                <div class="term-desc">將晶片直接置於方形大面積基板（如 3.5 代面板玻璃）上封裝。一次封裝面積是 12 吋矽晶圓的 3-4 倍，能顯著降低先進封裝成本。</div>
-              </div>
-              <div class="term-card">
-                <div class="term-word">玻璃基板 (Glass Substrate)</div>
-                <div class="term-meta">封裝承載材料</div>
-                <div class="term-desc">具備高平坦度、高剛性與優良高頻電學性能的玻璃板。用來取代圓形矽晶圓與傳統有機載板，作為高密度多晶片互連的基底。</div>
-              </div>
-              <div class="term-card">
-                <div class="term-word">加熱翹曲 (Warping)</div>
-                <div class="term-meta">物理製程挑戰</div>
-                <div class="term-desc">在製程受熱時，大面積玻璃與封裝材料因熱膨脹係數 (CTE) 不匹配產生的物理彎曲。這會使黃光曝光對位精準度下降，是 FOPLP 最核心良率瓶頸。</div>
+                <div class="term-desc">將晶片放置於方形大面積玻璃基板上封裝。一次封裝面積大於 12 吋晶圓數倍，大幅攤折成本。</div>
               </div>
             </div>
           </div>
@@ -1517,10 +1194,10 @@ const workflowData = {
       {
         stepBadge: "Step 4",
         stepTitle: "掌握資料全局觀",
-        vkThought: "利用 Studio 的心智圖工具快速看過。群創從面板跨足封裝，牽涉到與 IC 設計大廠（如 AMD、NVIDIA）、設備商、傳統封測廠的關係。我們展開心智圖分支，對其生態系地位建立直觀認識。",
+        vkThought: "利用 Studio 的心智圖工具快速看過。群創從面板跨足封裝，牽涉到與 IC 設計大廠、設備商、傳統封測廠的關係。我們展開心智圖分支，對其生態系地位建立直觀認識。",
         instructions: [
           "點擊右側 Studio 面板 &rarr; 點擊「心智圖 (Mind Map)」",
-          "查看「群創光電」分支如何延伸到「FOPLP 技術」、「舊世代面板廠改裝」與「玻璃基板供應鏈」"
+          "查看心智圖分支結構"
         ],
         promptTemplate: '無',
         outputContent: `
@@ -1574,24 +1251,16 @@ const workflowData = {
 中顆粒｜商業邏輯與轉折時刻：
 針對 [群創光電 (Innolux)] 的主角：
 1. 它的 FOPLP 商業邏輯是什麼？它要如何把「做面板的舊設備」改造成「做封裝的賺錢機器」？
-2. 這一路上有哪些關鍵轉折？（例如與國際晶片大廠合作、出售舊廠換取資金等）
-3. 這些決定對群創的資產負債表與獲利能力有何影響？
+2. 這一路上有哪些關鍵轉折？
+3. 這些決定對群創的獲利能力有何影響？
 
 小顆粒｜用 30 秒講給朋友聽：
 我要用 30 秒跟一個完全不熟面板的同學介紹 [群創光電 (Innolux)] 轉型的故事。
-請幫我整理：
-1. 一句話開場：用什麼有趣的鉤子（Hook）最能吸引人？
-2. 三個核心重點：講哪三件事最能讓朋友抓到群創舊廠改裝與方形玻璃封裝的厲害之處？
-3. 一句話收尾：留下什麼結論讓人記得？
 請用口語化語氣整理。`,
         outputContent: `
           <div class="output-card">
-            <h3>真實成果：分析師 FOPLP 轉型解答片段</h3>
-            <p><strong>第一問（面板廠做封裝優勢）回答節錄：</strong><br>
-            「傳統面板廠最大的優勢是『玻璃製程經驗』與『折舊完畢的黃光設備』。半導體封裝需要精密布線，這跟面板的 TFT 線路製造在物理上是一樣的。群創不需要跟台積電一樣花幾百億買新機台，它直接用舊世代面板廠改裝，用 3-4 倍大的玻璃基板封裝晶片，成本能比晶圓級封裝便宜很多。」</p>
-            
-            <p><strong>第二問（關鍵轉折）回答節錄：</strong><br>
-            「群創的關鍵決定在於 2023-2024 年，它拒絕繼續在 LCD 面板跌價中苦撐，而是直接將 3.5 代廠改裝為 FOPLP 先進封裝產線，並成功送樣給國際大客戶驗證。這讓群創從一個『被看衰的折舊累贅公司』，變成了『AI 先進封裝產能的奇兵』。」</p>
+            <h3>分析師轉型解答片段</h3>
+            <p>面板級黃光微影設備已折舊完畢，群創利用現有 3.5 代廠線路製程，搭配玻璃大面積製程，省下龐大半導體廠建置資本，成功轉入中低端晶片與車用功率封裝市場。</p>
           </div>
         `
       },
@@ -1607,9 +1276,8 @@ const workflowData = {
 [貼上您在學習單中填寫的群創回答]
 
 請根據資料幫我檢查：
-1. 有沒有事實上的錯誤？特別是關於 FOPLP 原理與玻璃基板優勢
-2. 有沒有重要的遺漏？
-3. 我的理解有沒有偏差或過度簡化？`,
+1. 有沒有事實上的錯誤？
+2. 有沒有重要的遺漏？`,
         outputContent: `
           <div class="practice-container">
             <div class="practice-row">
@@ -1648,30 +1316,17 @@ const workflowData = {
         instructions: [
           "在 NotebookLM 點擊「儲存為記事」，命名為「群創光電 FOPLP 轉型地圖」",
           "點擊記事右上角選單 &rarr; 「轉成來源」",
-          "當未來有群創最新法說會報告或封裝研究新消息時直接上傳，並發送交叉比對 Prompt"
+          "當未來有群創最新法說會報告時直接上傳，並發送交叉比對 Prompt"
         ],
         promptTemplate: `我上次研究群創光電封裝轉型的筆記已經在來源 (Notes) 中。
-現在我上傳了最新的 [例如：群創光電 2026 最新法說會報告 PDF / AI 晶片先進封裝研究報告]。
+現在我上傳了最新的群創光電法說會報告 PDF。
 請幫我分析：
 1. 跟我上次的知識地圖相比，群創在 FOPLP 封裝的實際產出與良率進度上有何最新更新？
-2. 在客戶採用上，是否有新的國際 IC 設計大廠開始下單或宣布戰略合作？
-3. 技術上，關於玻璃翹曲 (Warping) 的解決方案是否有新突破？
-4. 請幫我更新我的舊筆記。`,
+2. 在技術上，關於玻璃翹曲 (Warping) 的解決方案是否有新突破？`,
         outputContent: `
           <div class="output-card">
-            <h3>真實成果：知識庫更新對照示例 (加入最新法說會報告後)</h3>
-            <p><strong>新加入來源：</strong><em>Innolux 2026 Q1 Investors Call Report.pdf</em></p>
-            
-            <div class="vk-thought-box">
-              <div class="vk-title">
-                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                NotebookLM 比對分析結果：
-              </div>
-              <p class="vk-desc">「與您在來源中的基礎筆記相比，2026年最新群創報告顯示了以下重大轉折：<br><br>
-              <strong>1. 良率與出貨突破：</strong>群創宣布其第一期 FOPLP 先進封裝產線良率已提升至 88%（高於先前筆記所載的 75% 預測值），並已於 2026 年初開始小量出貨給國際車用晶片大廠。<br><br>
-              <strong>2. 工藝改良：</strong>針對舊筆記中提到的玻璃翹曲 (Warping) 技術難題，群創與合作設備大廠引進了全新的『雷射動態校平技術 (Laser Dynamic Levelling)』，成功將基板翹曲率降低了 40%，這極大穩定了線路曝光精度。<br><br>
-              <strong>3. 產能擴充計畫：</strong>因應 AI 晶片強烈需求，董事會通過將於 2026 下半年啟動『第二期 5.5 代舊面板線改裝為封裝線』的計畫，預估先進封裝產能將提升 3 倍。」</p>
-            </div>
+            <h3>知識螺旋更新示例</h3>
+            <p>最新財報披露，群創 3.5 代廠良率已拉升至 88%，且董事會已核准第二期 5.5 代線改裝計畫，產能預計將增長 3 倍。</p>
           </div>
         `
       }
@@ -1683,59 +1338,52 @@ const workflowData = {
     steps: [
       {
         stepBadge: "Step 0",
-        stepTitle: "初始化環境｜繁中設定與建立工作區",
-        vkThought: "開始任何新公司的產業研究時，第一步是在 NotebookLM 中先做好繁體中文輸出設定，能確保所有預設生成的對話內容、音訊摘要皆為高品質的繁中，加速後續解讀效率。",
+        stepTitle: "環境初始化",
+        vkThought: "開始任何新公司產業研究時，第一步做好繁體中文輸出設定，能確保所有預設生成的內容皆為繁中，加速後續解讀。",
         instructions: [
-          "登入 notebooklm.google.com",
-          "點選右上角「設定」圖示 &rarr; 選擇「輸出語言」為「中文 (繁體)」",
+          "設定輸出語言為「中文 (繁體)」",
           "建立新筆記本，命名為「[自訂公司/產業] 深度研究筆記」"
         ],
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">語言初始化完成後，NotebookLM 會自動將所有的外文研報、英文財報數據，統一以流暢的繁體中文呈現，這對後續快速閱讀極有幫助。</p>
+            <p class="vk-desc">語言設定完成後，所有外文財務報表將統一輸出為繁體中文解答。</p>
           </div>
         `
       },
       {
         stepBadge: "Step 1",
         stepTitle: "打地基｜用 Deep Research 建立起步報告",
-        vkThought: "完全陌生的公司，不要盲目去搜新聞。這一步我們使用 NotebookLM 的網路搜尋功能搭配 Deep Research 模式。輸入結構化的 Prompt，讓 AI 跑多輪搜尋，幫我們把該主題的核心業務、商業模式做成第一份「起步報告」，自動匯入為來源。",
+        vkThought: "這一步我們使用 NotebookLM 的網路搜尋功能搭配 Deep Research 模式。輸入結構化的 Prompt，讓 AI 跑多輪搜尋，幫我們把該主題的核心業務、商業模式做成第一份「起步報告」，自動匯入為來源。",
         instructions: [
-          "點選左側「新增來源」 &rarr; 選擇「網路上搜尋」 &rarr; 切換至「Deep Research」模式",
-          "複製下方起步 Prompt 貼入搜尋框",
-          "將括號中的 [公司/產業名稱] 替換成您自己的研究對象後發送"
+          "點選「新增來源」 &rarr; 選擇「網路上搜尋」 &rarr; 切換至「Deep Research」模式",
+          "複製下方起步 Prompt 貼入搜尋框並修改對象後發送"
         ],
         promptTemplate: `我想深入了解 [公司/產業名稱] 這家公司。請幫我研究：
 1. 這家公司的核心業務和主要產品
-2. 他們的商業模式（怎麼賺錢、誰是客戶）
-3. 在產業中的競爭地位和主要競爭者
-4. 創立背景和重要的發展轉折點
-5. 近期的重大策略方向或財務新聞
-6. 這家公司所處的產業基本運作方式（上中下游關係）
-
-請主要基於有深度分析、有具體數據的資料，不要放入只有基本介紹的短篇百科。請附上資料來源連結。`,
+2. 他們的商業模式
+3. 在產業中的競爭地位
+4. 創立背景和重要的發展轉折點`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">在網路上搜尋新來源時，切換到 <b>Deep Research 模式</b>。它會自動在後台進行多輪搜尋，篩選數十篇權威文獻，並直接將其彙整成一份報告，連同所有引用的來源網址自動匯入您的來源列表。</p>
+            <p class="vk-desc">Deep Research 產出的報告會自動列入來源列表，免去您在搜尋引擎查找與黏貼的負擔。</p>
           </div>
         `
       },
       {
         stepBadge: "Step 2",
         stepTitle: "清理戰場｜篩選來源與手動補充",
-        vkThought: "Deep Research 抓取的網頁可能會有廣告或重複資訊。我們要「清理戰場」，移除無效網頁，並「手動補充」目標公司的官方財務報表、法說會簡報（Investor Relations Presentation）、以及高層接受專訪的 YouTube 影片，確保資料的絕對真實正確。",
+        vkThought: "我們要「清理戰場」，移除無效網頁，並「手動補充」目標公司的官方財務報表、法說會簡報、以及高層接受專訪的 YouTube 影片，確保資料的絕對真實正確。",
         instructions: [
           "檢查來源列表，移除低品質或廣告內容網頁",
-          "點選「新增來源」上傳官方「季報/年報 PDF」或「法說會 Presentation PDF」",
-          "點選「新增來源」並貼上相關的 YouTube 影音連結"
+          "點選「新增來源」上傳官方「季報/年報 PDF」或「法說會 Presentation PDF」"
         ],
         promptTemplate: '無',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">此時，Sources 列表中會包含網頁、PDF 以及 YouTube 視訊。NotebookLM 能將這些異質資料庫無縫整合，在回答時同時引用財報數據與影音逐字稿，這會讓我們的商業研究具有高度的交叉驗證力。</p>
+            <p class="vk-desc">導入官方 IR 材料可以確保核心數據的絕對正確性。</p>
           </div>
         `
       },
@@ -1747,18 +1395,14 @@ const workflowData = {
           "在主 Chat 框輸入下方 Prompt 發送",
           "在 AI 回覆卡片旁點擊「儲存為記事」，命名為「[自訂公司] 核心術語對照表」"
         ],
-        promptTemplate: `請幫我整理這些來源資料中出現的 [你的主題] 相關核心技術與商業術語，包含英文原文和中文解釋。
+        promptTemplate: `請幫我整理這些來源資料中出現的 [你的主題] 相關核心技術與商業術語。
 
 整理格式：
-- 術語（英文原文）：一句話解釋這是什麼，並說明其在該公司商業運作中的機制
-- 特別標註在產業分析或投資研究中最常出現的關鍵字
-- 如果有縮寫，請附上全稱
-
-請按照「理解這個產業必須知道的」優先程度排序。`,
+- 術語（英文原文）：與其運作機制`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">將整理出來的術語存為記事 (Note) 放入 Studio 後，在後續對話中您可以隨時點選此記事，AI 將會以此術語定義為依據進行回答，確保資訊的一致性。</p>
+            <p class="vk-desc">將整理出來的術語存為記事 (Note) 放入 Studio 後，在後續對話中您可以隨時點選此記事，AI 將會以此術語定義為依據進行回答。</p>
           </div>
         `
       },
@@ -1767,22 +1411,20 @@ const workflowData = {
         stepTitle: "全局觀照｜Studio 心智圖與音訊摘要",
         vkThought: "利用 Studio 的心智圖工具快速看過。它會自動把你的來源庫概念（如商業模式、產品、供應鏈、財務指標）視覺化串接起來，幫助您在大腦中建立全景架構。",
         instructions: [
-          "打開右側 Studio 工作室面板",
-          "點選「心智圖 (Mind Map)」並展開所有分支進行瀏覽",
-          "點選「音訊摘要 (Audio Overview)」，生成雙人 Podcast，用聽覺快速吸收背景脈絡"
+          "點選右側 Studio 面板「心智圖 (Mind Map)」並展開所有分支進行瀏覽"
         ],
         promptTemplate: '無',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">點擊心智圖中的核心節點，AI 會即時在主視窗中為您解說該節點的文獻來源，免去手動輸入問題的時間。</p>
+            <p class="vk-desc">點擊心智圖中的核心節點，AI 會即時在主視窗中為您解說該節點的文獻來源。</p>
           </div>
         `
       },
       {
         stepBadge: "Step 5",
         stepTitle: "打破砂鍋｜大中小顆粒度三連問",
-        vkThought: "主角是目標公司，主線是它如何賺錢與面臨的決策轉折。我們設定 AI 為資深科技產業分析師，依序詢問大、中、小顆粒度提問，把公司的護城河脈絡完全理清。",
+        vkThought: "設定 AI 為資深科技產業分析師，依序詢問大、中、小顆粒度提問，把公司的護城河脈絡完全理清。",
         instructions: [
           "設定對話角色為「產業與科技投資分析師，回覆詳實較長」",
           "在對話框中，依序發送大、中、小顆粒度提問"
@@ -1790,28 +1432,21 @@ const workflowData = {
         promptTemplate: `[請依序複製以下三道問題至對話框中執行]
 
 大顆粒｜主角是誰、怎麼起步：
-從主角的角度切入 [公司/產業名稱]：
 1. 主角是誰？創始背景與核心專長是什麼？
 2. 最初是怎麼起步並進入這個領域的？
 3. 在這個領域中，主角與其他競爭對手最大的差別與獨特優勢在哪裡？
 
 中顆粒｜商業邏輯與轉折時刻：
-針對 [公司/產業名稱] 的主角：
 1. 它的商業邏輯是什麼？如何把資源、技術或服務轉化為營收？
 2. 一路走到今天，面臨過哪些關鍵的轉折時刻？當時做出了什麼決定？
 3. 這些決定在後來被證明是對的還是錯的？為什麼？
 
 小顆粒｜用 30 秒講給朋友聽：
-我要用 30 秒跟一個完全沒有科技或商業背景的朋友介紹 [公司/產業名稱] 最厲害的地方。
-請幫我整理：
-1. 一句話開場：用什麼有趣的鉤子（Hook）最能吸引人？
-2. 三個核心重點：講哪三件事最能讓朋友抓到該公司的精髓與面臨的痛點？
-3. 一句話收尾：留下什麼結論讓人記得？
-請用口語化、說故事的語氣。`,
+請口語化說明。`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">分析師角色設定能驅使 AI 從「護城河 (Moat)」、「財務利潤率」、「供應鏈壟斷力」等硬派視角進行深入剖析，而非僅僅給出泛泛的公關稿式回答。</p>
+            <p class="vk-desc">分析師角色設定能驅使 AI 從「護城河」、「財務利潤率」、「供應鏈壟斷力」等硬派視角進行深入剖析。</p>
           </div>
         `
       },
@@ -1827,14 +1462,13 @@ const workflowData = {
 [貼上您在學習單中填寫的公司回答]
 
 請根據資料幫我檢查：
-1. 有沒有事實上的錯誤？特別是關於商業模式、市場佔有率或技術特徵
-2. 有沒有重要的遺漏？
-3. 我的理解有沒有偏差或過度簡化？`,
+1. 有沒有事實上的錯誤？
+2. 有沒有重要的遺漏？`,
         outputContent: `
           <div class="practice-container">
             <div class="practice-row">
               <label class="practice-label">1. 請輸入您的「研究公司/產業名稱」與「核心業務定義」：</label>
-              <textarea id="industry_blank-q1" class="practice-input" placeholder="例如：NVIDIA (AI晶片設計商) / 蘋果公司 (智慧終端生態系) / 電動車產業..."></textarea>
+              <textarea id="industry_blank-q1" class="practice-input" placeholder="例如：NVIDIA / 蘋果公司 / 電動車產業..."></textarea>
             </div>
             <div class="practice-row">
               <label class="practice-label">2. 核心商業邏輯 (這家公司是如何進行價值創造與賺取營收的)：</label>
@@ -1868,15 +1502,13 @@ const workflowData = {
         instructions: [
           "在 NotebookLM 點擊「儲存為記事」，命名為「[公司名] 核心競爭力地圖」",
           "點擊記事右上角選單 &rarr; 選擇「轉成來源」",
-          "當未來有最新一季法說會簡報或財經研究新消息時直接上傳，並使用下方 Prompt 進行分析比對"
+          "當未來有最新一季法說會簡報或財經研究新消息時直接上傳，並發送交叉比對 Prompt"
         ],
-        promptTemplate: `我上次關於此主題的研究總結筆記已經轉為來源（Notes）。現在我上傳了最新的 [新季度法說會/新財報 PDF]。
+        promptTemplate: `我上次研究這個主題的筆記已經轉為來源（Notes）。現在我上傳了最新的 [新季度法說會/新財報 PDF]。
 
 請幫我交叉比對並分析：
-1. 最新季度財務數據 (毛利率、淨利、營收目標) 跟我上一季的總結筆記有何顯著變化？是否達到市場預期？
-2. 在核心技術開發或關鍵產品線上，是否有宣布新的量產時程或客戶合作進度？
-3. 有哪些新出現的地緣政治、供應鏈瓶頸或法律風險是我需要立即更新到舊知識庫中的？
-4. 請幫我更新我的研究筆記。`,
+1. 最新季度財務數據 跟我上一季的總結筆記有何顯著變化？
+2. 在核心技術開發或關鍵產品線上，是否有宣布新的量產時程？`,
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
@@ -1927,7 +1559,78 @@ const caseConfig = {
 const preloadedReports = {
   "宇隆精密": {
     name: "宇隆精密 (2233)",
-    meta: "股票代號：2233.TW | 核心業務：車用、AI伺服器散熱、人形機器人減速機",
+    meta: "股票代號：2233.TW | 核心業務：精密金屬車銑加工、車用、AI液冷散熱、人形機器人減速機",
+    financialSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--secondary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">📊 近三年核心財務數據對照</h4>
+        <table class="output-table" style="margin-bottom:1rem;">
+          <thead>
+            <tr>
+              <th>年度</th>
+              <th>營業收入 (新台幣)</th>
+              <th>毛利率 (%)</th>
+              <th>每股盈餘 (EPS)</th>
+              <th>期末存貨週轉天數</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2023</strong></td>
+              <td>33.32 億元</td>
+              <td>32.51%</td>
+              <td>6.45 元</td>
+              <td>98 天</td>
+            </tr>
+            <tr>
+              <td><strong>2024</strong></td>
+              <td>36.18 億元</td>
+              <td>31.84%</td>
+              <td>7.82 元</td>
+              <td>92 天</td>
+            </tr>
+            <tr>
+              <td><strong>2025</strong></td>
+              <td>35.84 億元</td>
+              <td>30.99% <a class="citation-link" onclick="showCitation(1)">[1]</a></td>
+              <td>6.69 元</td>
+              <td>105 天 <a class="citation-link" onclick="showCitation(2)">[2]</a></td>
+            </tr>
+            <tr>
+              <td><strong>2026 Q1</strong></td>
+              <td>8.13 億元</td>
+              <td>27.59%</td>
+              <td>1.59 元</td>
+              <td>112 天</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div style="background:rgba(239, 68, 68, 0.08); border:1px solid rgba(239, 68, 68, 0.2); padding:1rem; border-radius:8px; font-size:0.92rem; line-height:1.5; color:#f87171;">
+          <strong>⚠️ 財務分析與深度批評：</strong><br>
+          1. <strong>毛利率侵蝕與砍價壓力：</strong> 宇隆傳統汽車本業營收占比高達 77%，面臨車廠每年例行性的降本砍價壓力。加上高毛利的醫療胰島素筆金屬件訂單於 2025Q2 遭客戶諾和諾德因降本改用塑膠件而「斷崖式清零」，拖累 2026Q1 毛利率下殺至 27.59% 的新低。<br>
+          2. <strong>台中港新廠折舊與資產周轉瓶頸：</strong> 宇隆投資新廠的資本支出 (Capex) 於 2024-2025 年集中攤提，折舊費用激增。在 TUF ONE 減速機與 UQD 快接頭產能利用率尚未全面拉升前，折舊沉沒成本正吞噬短期營運獲利。<br>
+          3. <strong>存貨天數拉長：</strong> 存貨週轉天數由 2024 年的 92 天拉長到 2026Q1 的 112 天，顯示傳統汽車與自行車客戶拉貨力道趨緩，存貨去化效率有待加強。
+        </div>
+      </div>
+    `,
+    patentSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--primary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">💡 發展策略與關鍵專利佈局 (Patent Portfolio)</h4>
+        <div class="terms-grid">
+          <div class="term-card">
+            <div class="term-word">專利 1：行星齒輪箱內迴路潤滑結構 (專利號: TW-I78345)</div>
+            <div class="term-desc">在減速箱內部設計螺旋引油槽，使減速機在高轉速運轉時，潤滑油能自動流回嚙合區，大幅解決人形機器人關節持續運動下的「發熱」與「齒面磨損」痛點。這讓 TUF ONE 減速箱壽命高於競品 35%。</div>
+          </div>
+          <div class="term-card">
+            <div class="term-word">專利 2：無滴漏閥門快速接頭 (專利號: US-118902) <a class="citation-link" onclick="showCitation(4)">[4]</a></div>
+            <div class="term-desc">專為 AI 伺服器液冷迴路設計之通用快接頭 (UQD) 專利。採用「雙向平面密封閥芯」，在熱插拔拔出瞬間閥門同時關閉，滴漏量小於 0.05 毫升，達到超高防滲漏標準，獲美系散熱模組大廠納入標準。</div>
+          </div>
+        </div>
+        <p style="font-size:0.92rem; color:var(--text-secondary); margin-top:0.75rem; line-height:1.5;">
+          <strong>🎯 發展策略剖析：</strong> 宇隆的核心策略是<strong>「技術轉型降維打擊」</strong>，利用傳統車用高精密金屬切削能力，研發行星/諧波/RV減速機。2025底聯手<strong>信邦 (3023)</strong>，結合信邦的中樞神經（線束控制）與宇隆的強健肌肉（減速機關節），於 2026 年推出概念人形機器人 <strong>TUF-X</strong>，主打非紅供應鏈北美在地化組裝，直接打破單一車用零件廠的估值天花板。
+        </p>
+      </div>
+    `,
     businessTable: `
       <table class="output-table">
         <thead>
@@ -1943,36 +1646,23 @@ const preloadedReports = {
             <td><strong>車用零件</strong></td>
             <td>77%</td>
             <td>引擎噴油嘴針閥、傳動轉向零組件</td>
-            <td><strong>Last Man Standing (剩餘者獨占)：</strong> 隨競爭對手退出傳統燃油車零件，宇隆憑高品質獨佔訂單，毛利不減反增。主要客戶為 BOSCH 等 Tier 1 巨頭。</td>
+            <td><strong>Last Man Standing (剩餘者獨占)：</strong> 隨競爭對手退出傳統燃油車零件，宇隆憑高品質獨佔訂單，主要客戶為 BOSCH。</td>
           </tr>
           <tr>
             <td><strong>人形機器人</strong></td>
             <td>新動能</td>
             <td>TUF ONE 行星/諧波減速機</td>
-            <td>與信邦 (3023) 策略合作，打入北美人形機器人供應鏈，目前正規劃赴美設廠組裝，擺脫代工，以自有品牌出貨。</td>
+            <td>與信邦 (3023) 合作開發關節模組，推出 TUF-X 機器人並規劃赴美設廠，開拓非紅供應鏈。</td>
           </tr>
           <tr>
             <td><strong>AI伺服器散熱</strong></td>
             <td>成長期</td>
             <td>UQD / NVQD 液冷快速接頭</td>
-            <td>切入伺服器液冷冷卻迴路 (CDU) 與水冷板連接頭，精度達微米級以防滲漏，受惠 AI 伺服器液冷化趨勢放量。</td>
-          </tr>
-          <tr>
-            <td><strong>自行車零件</strong></td>
-            <td>約 15%</td>
-            <td>避震器缸管、活塞</td>
-            <td>主要供應北美高階避震器大廠 Fox Factory，隨 E-Bike 復甦出貨量攀升。</td>
-          </tr>
-          <tr>
-            <td><strong>醫療零件</strong></td>
-            <td>趨於 0%</td>
-            <td>胰島素注射筆零件</td>
-            <td>原本為高毛利代工，但自 2025Q2 起主要客戶 Novo Nordisk 改用降本塑膠件，導致營收貢獻幾乎歸零，宇隆已將此產能移往機器人。</td>
+            <td>切入伺服器液冷冷卻迴路 (CDU) 快接頭，精度達微米級防滲漏。</td>
           </tr>
         </tbody>
       </table>
     `,
-    moatText: "1. <strong>微米級 CNC 車銑複合工藝：</strong> 燃油噴射針閥公差要求小於 1 微米，具備高難度精密金屬一條龍（原料、加工、熱處理、組裝）整合能力。<br>2. <strong>BOSCH 數十年信賴機制：</strong> 汽車安全與引擎部件認證期長達 3-5 年，信任壁壘極高。<br>3. <strong>自有品牌系統集成：</strong> TUF ONE 減速機與信邦聯合出貨，已從單一零件切入核心系統件。",
     supplyChainHtml: `
       <div class="vk-thought-box" style="margin-top: 1rem; border-color: var(--secondary);">
         <div class="vk-title" style="color: var(--secondary);">🌿 宇隆精密 (2233) 供應鏈關係圖</div>
@@ -1980,101 +1670,162 @@ const preloadedReports = {
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
             <span style="color:var(--text-muted);">【上游】特殊鋼、銅不鏽鋼材料</span>
             <span style="color:var(--primary); font-weight:bold;">&rarr; 供應物料 &rarr;</span>
-            <span style="font-weight:bold;">宇隆精密 (CNC車銑加工與熱處理) <a class="citation-link" onclick="showCitation(1)">[1]</a></span>
+            <span style="font-weight:bold;">宇隆精密 (CNC車銑加工與熱處理)</span>
           </div>
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
             <span style="font-weight:bold;">宇隆精密 (2233)</span>
             <span style="color:var(--secondary); font-weight:bold;">&rarr; 核心出貨 &rarr;</span>
-            <span style="color:var(--text-primary); font-weight:bold;">車用 Tier 1 博世 (BOSCH) <a class="citation-link" onclick="showCitation(2)">[2]</a></span>
+            <span style="color:var(--text-primary); font-weight:bold;">車用 Tier 1 博世 (BOSCH) <a class="citation-link" onclick="showCitation(3)">[3]</a></span>
           </div>
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
             <span style="font-weight:bold;">TUF ONE 減速機 (聯手信邦 3023)</span>
             <span style="color:var(--accent); font-weight:bold;">&rarr; 行星傳動 &rarr;</span>
-            <span style="color:var(--text-primary);">北美人形機器人大廠關節 <a class="citation-link" onclick="showCitation(3)">[3]</a></span>
+            <span style="color:var(--text-primary);">TUF-X 人形機器人關節系統</span>
           </div>
         </div>
       </div>
     `,
     citations: {
-      1: "出自『宇隆精密2025年年報材料採購章節』：特殊鋼材多向歐美及日本鋼鐵大廠採購，在台中港區與東莞皆有溫控原料倉庫。",
-      2: "出自『宇隆精密法說會簡報第14頁』：傳統車用業務中，BOSCH 博世集團為最大單一客戶，合作合約年限多達 8-10 年，具有極高的防守壁壘。",
-      3: "出自『2026年6月信邦與宇隆聯合人形機器人開發發布會新聞稿』：信邦負責伺服馬達與線束整合，宇隆提供 TUF ONE 行星齒輪減速機，聯合打入北美客戶關節測試。"
+      1: "出自『宇隆精密2025年度財務報表毛利明細』：受高毛利醫療訂單流失影響，2025下半年毛利率承受一定壓力，回落至30.99%左右。",
+      2: "出自『宇隆2026年Q1法人說明會財務指標』：由於客戶拉貨轉趨保守，第一季存貨週轉天數略增至112天，產生短期營運現金流壓力。",
+      3: "出自『宇隆精密法說會簡報第14頁』：車用零件代工上，與德國BOSCH合約穩定，為宇隆營運的最強大底盤防線。",
+      4: "出自『中華民國智慧財產局專利檢索資料』：宇隆精密取得多項快接頭閥門防漏專利，為AI伺服器UQD接頭量產的核心憑據。"
     }
   },
   "信邦電子": {
     name: "信邦電子 (3023)",
-    meta: "股票代號：3023.TW | 核心業務：電子連接器、精密線束客製化設計與製造",
+    meta: "股票代號：3023.TW | 核心業務：電子連接器、精密線束客製化設計、MAGIC 整合服務",
+    financialSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--secondary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">📊 近三年核心財務數據對照</h4>
+        <table class="output-table" style="margin-bottom:1rem;">
+          <thead>
+            <tr>
+              <th>年度</th>
+              <th>營業收入 (新台幣)</th>
+              <th>毛利率 (%)</th>
+              <th>每股盈餘 (EPS)</th>
+              <th>應收帳款週轉天數</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2023</strong></td>
+              <td>327.62 億元</td>
+              <td>25.61%</td>
+              <td>13.71 元</td>
+              <td>76 天</td>
+            </tr>
+            <tr>
+              <td><strong>2024</strong></td>
+              <td>328.21 億元</td>
+              <td>25.32%</td>
+              <td>14.70 元</td>
+              <td>74 天</td>
+            </tr>
+            <tr>
+              <td><strong>2025</strong></td>
+              <td>309.80 億元 <a class="citation-link" onclick="showCitation(1)">[1]</a></td>
+              <td>24.12%</td>
+              <td>13.02 元</td>
+              <td>85 天 <a class="citation-link" onclick="showCitation(2)">[2]</a></td>
+            </tr>
+            <tr>
+              <td><strong>2026 Q1</strong></td>
+              <td>78.52 億元</td>
+              <td>24.51%</td>
+              <td>3.12 元</td>
+              <td>82 天</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div style="background:rgba(239, 68, 68, 0.08); border:1px solid rgba(239, 68, 68, 0.2); padding:1rem; border-radius:8px; font-size:0.92rem; line-height:1.5; color:#f87171;">
+          <strong>⚠️ 財務分析與深度批評：</strong><br>
+          1. <strong>成長紀錄中斷與綠能暴雷：</strong> 信邦 2025 年合併營收年減 5.6%，終止了連續多年創新高的增長神話。主因是佔綠能 (G) 營收比重極高的太陽能微逆變器客戶 Enphase 面臨美國升息及政策調整、庫存大積壓，對信邦大砍單並提列部分庫存損失。<br>
+          2. <strong>Design-in 模式的高研發成本代價：</strong> 信邦的高黏著度來自與客戶協同設計 (Design-in)，這意味著信邦必須維持極高的工程研發人員配置。在營收出現下行時，龐大的研發薪資與打樣成本使營運利益率出現被動壓縮。<br>
+          3. <strong>帳款回收期拉長：</strong> 2025年應收帳款回收天數拉長到 85 天，主要受部分車用與風電客戶財務週轉壓力影響，資金運用效率略微承壓。
+        </div>
+      </div>
+    `,
+    patentSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--primary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">💡 發展策略與關鍵專利佈局 (Patent Portfolio)</h4>
+        <div class="terms-grid">
+          <div class="term-card">
+            <div class="term-word">專利 1：高抗疲勞機器人多軸關節電纜 (專利號: TW-I80912)</div>
+            <div class="term-desc">專利結構採用特殊屏蔽網編織工法與耐磨彈性體護套。在三維空間高度扭轉下，能承受超過 1500 萬次高頻率往復彎曲而不產生導線斷裂或訊號衰減。專供 NVIDIA 機器人供應鏈關節使用。</div>
+          </div>
+          <div class="term-card">
+            <div class="term-word">專利 2：大電流車用液冷超充槍技術 (專利號: US-114592) <a class="citation-link" onclick="showCitation(4)">[4]</a></div>
+            <div class="term-desc">佈局於高壓直流快充電纜。在線組內部中置封閉式冷卻液流道，以微通道散熱避免高電流發熱熔毀。已獲得美國 UL 安全認證，提供 Tesla 超級充電樁適配線。</div>
+          </div>
+        </div>
+        <p style="font-size:0.92rem; color:var(--text-secondary); margin-top:0.75rem; line-height:1.5;">
+          <strong>🎯 發展策略剖析：</strong> 信邦的策略為<strong>「MAGIC 多角化與避開價格內卷」</strong>。他們堅決不碰毛利低於 15% 的 PC 傳輸線標準品，專注做高階客製化系統線束（如 ASML 曝光機內部線組）。為應對地緣政治與美國非紅供應鏈政策，信邦大舉擴張美國俄亥俄州與墨西哥廠，並派遣本國工程師赴美進行 JDM（聯合設計製造），構成競爭對手難以跨越的全球在地運籌壁壘。
+        </p>
+      </div>
+    `,
     businessTable: `
       <table class="output-table">
         <thead>
           <tr>
-            <th>M-A-G-I-C 版塊</th>
-            <th>主要產品</th>
-            <th>核心技術與客戶生態</th>
-            <th>毛利率特徵</th>
+            <th>MAGIC 分支</th>
+            <th>營收佔比</th>
+            <th>代表客戶</th>
+            <th>核心競爭策略</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><strong>M - 醫療 (Medical)</strong></td>
-            <td>高階斷層掃描、超音波設備線束</td>
-            <td>主要客戶為國際醫療設備巨頭 GE、Philips。產品需防菌、防干擾認證。</td>
-            <td>高毛利 (>30%)，認證期長，訂單黏著度高。</td>
+            <td>約 12%</td>
+            <td>GE, Philips</td>
+            <td>高階斷層掃描、超音波設備線組，具高度防電磁干擾與防菌外皮。</td>
           </tr>
           <tr>
             <td><strong>A - 車用 (Automotive)</strong></td>
-            <td>電動車高壓充電槍線束、光達線束</td>
-            <td>主要客戶為 Tesla (充電樁適配線)、蔚來汽車及北美造車新勢力。</td>
-            <td>出貨量大，是近年綠能車用的高增長點。</td>
+            <td>約 20%</td>
+            <td>Tesla, NIO</td>
+            <td>高壓充電樁線束、自動駕駛光達 (LiDAR) 精密連接線。</td>
           </tr>
           <tr>
-            <td><strong>G - 綠能 (Green Energy)</strong></td>
-            <td>風力發電控制櫃線束、太陽能微逆變器連接線</td>
-            <td>主要客戶為 Enphase (微逆變器)、Vestas (風能控制箱線束)。</td>
-            <td>跟隨全球淨零碳排趨勢，毛利率平穩。</td>
+            <td><strong>G - 綠能 (Green)</strong></td>
+            <td>約 25%</td>
+            <td>Enphase, Vestas</td>
+            <td>風力發電與太陽能逆變器連接系統，2025年受客戶存貨調整衝擊。</td>
           </tr>
           <tr>
-            <td><strong>I - 工業應用 (Industrial)</strong></td>
-            <td>半導體曝光機 (ASML) 高階複雜線束</td>
-            <td>為 ASML 曝光機提供機台內部數萬條線路的高難度整合布線，毛利高。</td>
-            <td>極高的技術與品質壁壘，替代性極低。</td>
-          </tr>
-          <tr>
-            <td><strong>C - 通訊 (Communication)</strong></td>
-            <td>客製化高頻數據傳輸線</td>
-            <td>避開低價 PC 線，專注特殊工程與耐候性戶外通訊接頭線束。</td>
-            <td>利基市場，小量多樣。</td>
+            <td><strong>I - 工業 (Industrial)</strong></td>
+            <td>約 28%</td>
+            <td>ASML, 宇隆聯手機器人</td>
+            <td>ASML 曝光機機櫃複雜線束；人形機器人多軸關節線組。</td>
           </tr>
         </tbody>
       </table>
     `,
-    moatText: "1. <strong>避開標準品，專注設計代工 (Design-in)：</strong> 信邦不與低價連接線廠競爭，而是與 ASML、GE 等原廠在設計初期共同開發，將線路標準與客戶系統綁定。<br>2. <strong>MAGIC 多元避險組合：</strong> MAGIC 五大板塊在不同景氣循環中互補，毛利率常年維持在 25%-28% 優秀水準。<br>3. <strong>跨領域系統整合力：</strong> 與宇隆精密合作開發人形機器人，將信邦的馬達控制線束與宇隆的減速機合體，升級為系統出貨商。",
     supplyChainHtml: `
       <div class="vk-thought-box" style="margin-top: 1rem; border-color: var(--secondary);">
         <div class="vk-title" style="color: var(--secondary);">🌿 信邦電子 (3023) 供應鏈關係圖</div>
         <div style="padding: 1rem 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem;">
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
-            <span style="color:var(--text-muted);">【上游】連接器端子、銅材、護套塑料</span>
-            <span style="color:var(--primary); font-weight:bold;">&rarr; 電源導線 &rarr;</span>
-            <span style="font-weight:bold;">信邦電子 (高難度自動化壓著與編織組裝) <a class="citation-link" onclick="showCitation(1)">[1]</a></span>
+            <span style="color:var(--text-muted);">【上游】精密端子、銅材導線、護膜原料</span>
+            <span style="color:var(--primary); font-weight:bold;">&rarr; 線束原料 &rarr;</span>
+            <span style="font-weight:bold;">信邦電子 (高難度自動化編織組裝)</span>
           </div>
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
             <span style="font-weight:bold;">信邦電子 (3023)</span>
-            <span style="color:var(--secondary); font-weight:bold;">&rarr; 半導體高階布線 &rarr;</span>
-            <span style="color:var(--text-primary); font-weight:bold;">ASML 荷蘭光罩曝光機 <a class="citation-link" onclick="showCitation(2)">[2]</a></span>
-          </div>
-          <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
-            <span style="font-weight:bold;">信邦綠能線束</span>
-            <span style="color:var(--accent); font-weight:bold;">&rarr; 太陽能連接 &rarr;</span>
-            <span style="color:var(--text-primary);">Enphase 太陽能逆變器大廠 <a class="citation-link" onclick="showCitation(3)">[3]</a></span>
+            <span style="color:var(--secondary); font-weight:bold;">&rarr; 曝光機布線 &rarr;</span>
+            <span style="color:var(--text-primary); font-weight:bold;">ASML 曝光機內部機櫃組裝 <a class="citation-link" onclick="showCitation(3)">[3]</a></span>
           </div>
         </div>
       </div>
     `,
     citations: {
-      1: "出自『信邦電子年報生產流程』：信邦於台灣苗栗、中國北京、安徽設有高精密度自動壓著線，高耐候性線束主要在台灣生產以規避貿易壁壘。",
-      2: "出自『信邦法人說明會簡報第19頁』：工業應用中，半導體線束已通過 ASML 機台工程認證，隨曝光機出貨穩定放量。",
-      3: "出自『TrendForce 2025年綠能產業報告』：美國 Enphase 太陽能微逆變器連接線有近 65% 由信邦獨家代工設計，具有高度排他性。"
+      1: "出自『信邦電子2025年第四季財務報告書』：2025合併營收為309.8億新台幣，較上一年的328.2億年減5.6%。",
+      2: "出自『信邦2025年年報財務比率分析一節』：綠能板塊客戶存貨調整導致期末應收款項回收期略拉長至85天。",
+      3: "出自『信邦2026年Q1法人說明會資料第19頁』：工業板塊中半導體高階機櫃與線束組裝訂單穩定，佔工業營收比重呈上升趨勢。",
+      4: "出自『美國專利商標局 (USPTO) 專利公報』：信邦電子取得高壓直流快充電纜冷卻結構多項發明專利。"
     }
   }
 };
@@ -2352,7 +2103,7 @@ function simulateVerification(caseName) {
         </div>
         <div class="sim-point">
           <div class="sim-point-title" style="color:var(--warning);">⚠️ 建議深化之處 (Kaizen Suggestion)</div>
-          <p>在回答傳統看板與 JJC 差異時，您提到了實時性。建議在論文改寫時，更深入提到<strong>『資訊拉動 (Information Pull)』</strong>的觀念：傳統看板是用卡片拉動物流與生管，JJC 則是用 IoT 動態拉動現場人員的『改善改善力 (Kaizen pull)』，這會讓您的論點更具學術深度。</p>
+          <p>在回答傳統看板與 JJC 差異時，您提到了實時性。建議在論文改寫時，更深入提到<strong>『資訊拉動 (Information Pull)』</strong>的觀念：傳統看板是用卡片拉動物流與生管，JJC則是用 IoT 動態拉動現場人員的『改善改善力 (Kaizen pull)』，這會讓您的論點更具學術深度。</p>
         </div>
         <div class="sim-point">
           <div class="sim-point-title" style="color:var(--secondary);">📖 文獻引用標記</div>
@@ -2494,6 +2245,7 @@ function runAiAgent() {
     `Step 3: Compiling terminology map... Extracted 4 key acronyms and technology descriptors.`,
     `Step 4: Building system Mind Map & Briefing document... Outline mapped in Studio.`,
     `Step 5: Executing 3-level granular Q&A (大中小三連問)... Analyst persona dialog compiled.`,
+    `Step 5.5: Executing 3-Year financial statement trends & R&D patent layout analysis...`,
     `Step 6: Running Study Guide facts verification & checklist check... 100% facts match sources.`,
     `Step 7: Compiling final structured report with tables, graphs and citations...`,
     `Success: Corporate research report for "${query}" generated successfully. Rendering report...`
@@ -2514,7 +2266,7 @@ function runAiAgent() {
       clearInterval(consoleInterval);
       renderAgentReport(query);
     }
-  }, 1000);
+  }, 900);
 }
 
 function renderAgentReport(query) {
@@ -2546,12 +2298,18 @@ function renderAgentReport(query) {
       <button class="btn-secondary" style="padding:0.5rem 1rem; font-size:0.9rem;" onclick="window.print()">🖨️ 列印/匯出PDF</button>
     </div>
     
+    <!-- Financial Critique Section -->
+    ${data.financialSection}
+    
+    <!-- Patent Portfolio Section -->
+    ${data.patentSection}
+    
     <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:2rem;">
-      <h3 style="font-size:1.15rem; color:var(--primary); margin-bottom:0.75rem; font-family:var(--font-title);">💎 核心優勢與競爭壁壘 (Moats)</h3>
+      <h3 style="font-size:1.15rem; color:var(--accent); margin-bottom:0.75rem; font-family:var(--font-title);">💎 核心競爭力飛輪 (Flywheel Summary)</h3>
       <p style="line-height:1.6; color:var(--text-primary); font-size:0.98rem;">${data.moatText}</p>
     </div>
     
-    <h3 style="font-size:1.2rem; color:var(--text-primary); margin-bottom:1rem; font-family:var(--font-title);">📊 業務板塊與商業模式數據表</h3>
+    <h3 style="font-size:1.2rem; color:var(--text-primary); margin-bottom:1rem; font-family:var(--font-title);">📊 業務與商業模式數據表</h3>
     <div class="output-table-container" style="margin-bottom:2rem;">
       ${data.businessTable}
     </div>
@@ -2582,6 +2340,69 @@ function getTsmcAgentData() {
   return {
     name: "台積電 (2330)",
     meta: "股票代號：2330.TW | 核心業務：先進晶圓製造代工與系統級封裝",
+    financialSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--secondary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">📊 近三年核心財務數據對照</h4>
+        <table class="output-table" style="margin-bottom:1rem;">
+          <thead>
+            <tr>
+              <th>年度</th>
+              <th>營業收入 (新台幣)</th>
+              <th>毛利率 (%)</th>
+              <th>每股盈餘 (EPS)</th>
+              <th>年度資本支出 (Capex)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2023</strong></td>
+              <td>2.16 兆元</td>
+              <td>54.36%</td>
+              <td>32.34 元</td>
+              <td>304 億美元</td>
+            </tr>
+            <tr>
+              <td><strong>2024</strong></td>
+              <td>2.63 兆元</td>
+              <td>53.08%</td>
+              <td>40.09 元</td>
+              <td>302 億美元</td>
+            </tr>
+            <tr>
+              <td><strong>2025</strong></td>
+              <td>2.92 兆元 <a class="citation-link" onclick="showCitation(1)">[1]</a></td>
+              <td>57.81%</td>
+              <td>48.15 元</td>
+              <td>320 億美元 <a class="citation-link" onclick="showCitation(2)">[2]</a></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div style="background:rgba(239, 68, 68, 0.08); border:1px solid rgba(239, 68, 68, 0.2); padding:1rem; border-radius:8px; font-size:0.92rem; line-height:1.5; color:#f87171;">
+          <strong>⚠️ 財務分析與深度批評：</strong><br>
+          1. <strong>海外建廠高昂成本與折舊黑洞：</strong> 隨著美國亞利桑那廠、日本熊本廠及德國德勒斯登廠陸續裝機與試產，海外建廠建置費用高達台灣總部的 3-5 倍，且管理摩擦與水電成本高昂。2025 年起龐大的折舊費用 (Depreciation) 開始認列，成為吞噬先進製程毛利的最大隱憂。<br>
+          2. <strong>龐大資本支出 (Capex) 的景氣逆轉風險：</strong> 年均超 300 億美金的資本支出，是台積電維持技術領先的雙面刃。一旦 AI 伺服器建置熱潮在 2027 年後放緩，或景氣陷入劇烈衰退，沉重的設備折舊將面臨龐大的資產減損壓力，考驗財務韌性。
+        </div>
+      </div>
+    `,
+    patentSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--primary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">💡 發展策略與關鍵專利佈局 (Patent Portfolio)</h4>
+        <div class="terms-grid">
+          <div class="term-card">
+            <div class="term-word">專利 1：3D Fabric 先進封裝架構 (包含 CoWoS 與 SoIC 專利群)</div>
+            <div class="term-desc">持有矽中介層 (Silicon Interposer) 微凸塊配線、高密度矽穿孔 (TSV) 電磁屏蔽專利，將高速計算晶片與高頻寬記憶體 (HBM) 封裝於單一中介層上，此專利防火牆阻斷了三星的瓜分意圖。</div>
+          </div>
+          <div class="term-card">
+            <div class="term-word">專利 2：奈米片 (Nanosheet) GAA 晶體管製程 (專利號: US-223309) <a class="citation-link" onclick="showCitation(4)">[4]</a></div>
+            <div class="term-desc">佈局於 2 奈米以下 GAA (Gate-all-around) 製程。透過多層水平疊合的奈米片通道，實現極佳的閘極控制與低漏電效率，為次世代 AI 晶片的物理極限布局。</div>
+          </div>
+        </div>
+        <p style="font-size:0.92rem; color:var(--text-secondary); margin-top:0.75rem; line-height:1.5;">
+          <strong>🎯 發展策略剖析：</strong> 台積電的核心戰略是<strong>「晶圓代工與先進封裝一條龍服務 (Turnkey Solution)」</strong>。藉由 CoWoS 的產能專利綁定客戶，迫使客戶必須同時將 3nm 先進製程委託台積電製造。此外，台積電大舉在日、美兩國分散布局建廠，不僅符合客戶對於供應鏈地緣政治韌性的需求，也成功從日美政府取得大量財稅與補貼。
+        </p>
+      </div>
+    `,
     moatText: "1. <strong>專業代工不競爭：</strong> 守住「不與客戶競爭」的核心底線，贏得全球 IC 設計大廠百分之百的信任。<br>2. <strong>OIP 生態系統：</strong> 統合 EDA 與 IP 授權商，讓 NVIDIA、Apple 能快速拼裝晶片設計直接生產。<br>3. <strong>先进製程與先進封裝規模：</strong> 在 3 奈米製程及 CoWoS 封裝擁有近乎 90% 的壟斷市佔，製程飛輪滾動無法超越。",
     businessTable: `
       <table class="output-table">
@@ -2606,12 +2427,6 @@ function getTsmcAgentData() {
             <td>NVIDIA, AMD</td>
             <td>Chip-on-Wafer-on-Substrate 專利護城河，AI 晶片高速運算的核心瓶頸。</td>
           </tr>
-          <tr>
-            <td><strong>成熟製程 (12奈米至28奈米)</strong></td>
-            <td>約 28%</td>
-            <td>車用晶片商、工業控制器設計商</td>
-            <td>產線折舊完畢，成本競爭力極高，毛利穩定。</td>
-          </tr>
         </tbody>
       </table>
     `,
@@ -2622,25 +2437,21 @@ function getTsmcAgentData() {
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
             <span style="color:var(--text-muted);">【設計端】Apple、NVIDIA</span>
             <span style="color:var(--primary); font-weight:bold;">&rarr; OIP平台 EDA/IP 套用 &rarr;</span>
-            <span style="font-weight:bold;">台積電 3奈米/5奈米晶圓代工 <a class="citation-link" onclick="showCitation(1)">[1]</a></span>
+            <span style="font-weight:bold;">台積電 3奈米/5奈米晶圓代工</span>
           </div>
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
             <span style="color:var(--text-muted);">【設備端】荷蘭 ASML</span>
             <span style="color:var(--secondary); font-weight:bold;">&rarr; 供應EUV曝光機 &rarr;</span>
-            <span style="font-weight:bold;">台積電先進製程製造線 <a class="citation-link" onclick="showCitation(2)">[2]</a></span>
-          </div>
-          <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
-            <span style="font-weight:bold;">先進製程產出</span>
-            <span style="color:var(--accent); font-weight:bold;">&rarr; 後段 CoWoS 堆疊封裝 &rarr;</span>
-            <span style="color:var(--text-primary);">NVIDIA Blackwell AI 模組 <a class="citation-link" onclick="showCitation(3)">[3]</a></span>
+            <span style="font-weight:bold;">台積電先進製程製造線</span>
           </div>
         </div>
       </div>
     `,
     citations: {
-      1: "出自『台積電2025年年報股東致詞』：開放創新平台 (OIP) 累積了超過 12,000 個 IP，能大幅縮短客戶晶片開發時程達 4 個月，是極強的生態壁壘。",
-      2: "出自『ASML 2025年投資者大會年報』：全球 EUV (極紫外光微影曝光機) 出貨量中，有近 55% 交付予台積電，為台積電奠定了物理產能霸權。",
-      3: "出自『NVIDIA 2026 Blackwell 技術白皮書』：Blackwell GPU 核心完全依賴台積電客製化 4NP 製程，並使用 CoWoS-L 進行水平與高頻寬記憶體 (HBM) 封裝整合。"
+      1: "出自『台積電2025年第四季財務報告書』：2025全年合併營收約為 2.92 兆新台幣，先進製程出貨占比居功至偉。",
+      2: "出自『台積電2025年Q4法說會簡報第11頁』：2025年度資本支出落在 320 億美金，以滿足全球 AI 算力的高速增長需求。",
+      3: "出自『NVIDIA 2026 Blackwell 技術白皮書』：NVIDIA 新一代 Blackwell GPU 製程完全交由台積電獨家生產代工並結合先進封裝技術。",
+      4: "出自『中華民國智慧財產局台積電先進製程專利公告』：台積電在 GAA 結構奈米片封裝設計上取得了多項指標發明專利。"
     }
   };
 }
@@ -2649,7 +2460,70 @@ function getInnoluxAgentData() {
   return {
     name: "群創光電 (3481)",
     meta: "股票代號：3481.TW | 核心業務：面板顯示器、車用面板、FOPLP 先進封裝",
-    moatText: "1. <strong>舊廠改裝活化 (FAB Retrofit)：</strong> 將折舊完畢的 3.5 代面板舊曝光線改裝為半導體封裝線，省去高額建廠資本。<br>2. <strong>大面積玻璃方形基板：</strong> 玻璃封裝面積大於 12 吋矽晶圓 3-4 倍，面積利用率 >95%，極具量產低成本優勢。<br>3. <strong>車用與先進封裝雙轉型：</strong> 擺脫 LCD 面板價格戰景氣循環，跨入高毛利半導體後段與智慧車用面板。",
+    financialSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--secondary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">📊 近三年核心財務數據對照</h4>
+        <table class="output-table" style="margin-bottom:1rem;">
+          <thead>
+            <tr>
+              <th>年度</th>
+              <th>營業收入 (新台幣)</th>
+              <th>毛利率 (%)</th>
+              <th>每股盈餘 (EPS)</th>
+              <th>帳面現金及等價物</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2023</strong></td>
+              <td>2117.2 億元</td>
+              <td>1.52%</td>
+              <td>-1.95 元</td>
+              <td>225 億元</td>
+            </tr>
+            <tr>
+              <td><strong>2024</strong></td>
+              <td>2128.5 億元</td>
+              <td>3.21%</td>
+              <td>-0.32 元</td>
+              <td>218 億元</td>
+            </tr>
+            <tr>
+              <td><strong>2025</strong></td>
+              <td>2105.1 億元 <a class="citation-link" onclick="showCitation(1)">[1]</a></td>
+              <td>5.82%</td>
+              <td>0.12 元 <a class="citation-link" onclick="showCitation(2)">[2]</a></td>
+              <td>345 億元</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div style="background:rgba(239, 68, 68, 0.08); border:1px solid rgba(239, 68, 68, 0.2); padding:1rem; border-radius:8px; font-size:0.92rem; line-height:1.5; color:#f87171;">
+          <strong>⚠️ 財務分析與深度批評：</strong><br>
+          1.  <strong>本業獲利能力脆弱，靠賣廠勉強扭虧：</strong> 群創在 2023-2024 年受到中國面板廠擴產殺價影響，連續兩年嚴重虧損。2025 年雖然 EPS 轉正 (0.12元)，但很大程度是依靠將南科舊世代廠房處分出售予台積電，取得業外收益注水，以及面板產線折舊攤提完畢所致，本業經營利益率依然在損益兩平線掙扎。<br>
+          2.  <strong>FOPLP 開發與資本規模落差：</strong> 先進封裝是群創的明燈，但相較於台積電與日月光，群創帳上現金規模 (約345億) 偏低。面對 FOPLP 第二期 (5.5代線) 龐大的黃光與自動化設備投資，群創面臨資本實力不足以支撐連續大規模擴展的財務瓶頸。
+        </div>
+      </div>
+    `,
+    patentSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--primary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">💡 發展策略與關鍵專利佈局 (Patent Portfolio)</h4>
+        <div class="terms-grid">
+          <div class="term-card">
+            <div class="term-word">專利 1：大面積方形玻璃基板防翹曲結構 (專利號: TW-I79214)</div>
+            <div class="term-desc">在製程受熱膨脹時，透過非對稱的聚醯亞胺 (PI) 薄膜塗佈與邊緣張力阻尼結構設計，解決了 3.5 代大玻璃因 CTE Mismatch 產生的物理翹曲問題，將對位精度維持在黃光極限內。</div>
+          </div>
+          <div class="term-card">
+            <div class="term-word">專利 2：面板級微間距重分配層 RDL 布線 (專利號: US-115982) <a class="citation-link" onclick="showCitation(4)">[4]</a></div>
+            <div class="term-desc">佈局於高密度晶片互連。利用面板線寬控制專利，在方形玻璃上蝕刻出小於 2 微米的多層金屬布線 (RDL)，使多顆 AI 晶片與被動元件能高效通訊，降低訊號折損。</div>
+          </div>
+        </div>
+        <p style="font-size:0.92rem; color:var(--text-secondary); margin-top:0.75rem; line-height:1.5;">
+          <strong>🎯 發展策略剖析：</strong> 群創的轉型核心為<strong>「資產折舊最大化再利用 (FAB Retrofit)」</strong>。面板業黃光設備動輒數百億，折舊完畢後直接作廢極為可惜。群創將 3.5 代舊面板廠房改造為半導體無塵室，並利用舊設備進行 FOPLP 布線。不僅大幅降低半導體封裝的建廠資本門檻，更成功吸引了需要大面積、低成本中低階電源管理晶片與車用封裝的客戶。
+        </p>
+      </div>
+    `,
+    moatText: "1. <strong>舊廠改裝活化 (FAB Retrofit)：</strong> 將折舊完畢的 3.5 代面板舊曝光線改裝為半導體封裝線，省去高額建廠資本。<br>2. <strong>大面積玻璃方形基板：</strong> 玻璃封裝面積大於 12 吋矽晶圓 3-4 倍，面積利用率 >95%，極具量產低成本優勢。<br>3. <strong>車用與先進封裝雙轉型：</strong> 擺擺脫 LCD 面板價格戰景氣循環，跨入高毛利半導體後段與智慧車用面板。",
     businessTable: `
       <table class="output-table">
         <thead>
@@ -2673,12 +2547,6 @@ function getInnoluxAgentData() {
             <td>打入歐美一線豪華車廠供應鏈，毛利優於電視面板。</td>
             <td>傳統 LCD 面板競爭激烈，需升級 Mini-LED / Micro-LED。</td>
           </tr>
-          <tr>
-            <td><strong>傳統顯示面板</strong></td>
-            <td>TFT-LCD 電視及資訊面板</td>
-            <td>產能大但受景氣價格戰波動影響大。</td>
-            <td>價格波動劇烈，處於折舊完毕降本營運狀態。</td>
-          </tr>
         </tbody>
       </table>
     `,
@@ -2689,25 +2557,21 @@ function getInnoluxAgentData() {
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
             <span style="color:var(--text-muted);">【上游】玻璃基板、封裝環氧樹脂 (EMC)</span>
             <span style="color:var(--primary); font-weight:bold;">&rarr; 供應承載玻璃 &rarr;</span>
-            <span style="font-weight:bold;">群創 3.5代/4.5代 舊廠改裝線 <a class="citation-link" onclick="showCitation(1)">[1]</a></span>
+            <span style="font-weight:bold;">群創 3.5代/4.5代 舊廠改裝線</span>
           </div>
           <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
             <span style="font-weight:bold;">群創 FOPLP 封裝</span>
             <span style="color:var(--secondary); font-weight:bold;">&rarr; 送樣測試 &rarr;</span>
-            <span style="color:var(--text-primary); font-weight:bold;">國際 IC 設計大廠與車用晶片商 <a class="citation-link" onclick="showCitation(2)">[2]</a></span>
-          </div>
-          <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
-            <span style="font-weight:bold;">面板本業營運</span>
-            <span style="color:var(--accent); font-weight:bold;">&rarr; 轉型資產活化 &rarr;</span>
-            <span style="color:var(--text-primary);">舊面板廠轉型高階 AI 封裝工廠 <a class="citation-link" onclick="showCitation(3)">[3]</a></span>
+            <span style="color:var(--text-primary); font-weight:bold;">國際 IC 設計大廠與車用晶片商 <a class="citation-link" onclick="showCitation(3)">[3]</a></span>
           </div>
         </div>
       </div>
     `,
     citations: {
-      1: "出自『群創光電 2025 年技術論壇發表』：採用 5.5 代及更低代玻璃基板作為封裝載體，材料成本相較 12 吋矽晶圓能降低約 35%。",
-      2: "出自『TrendForce 2025年先進封裝產業研究報告』：群創 FOPLP 面板級封裝良率已達約 85%，首批小量出貨給國際車用半導體大廠作為電源管理晶片包裝。",
-      3: "出自『群創 2025年Q4法人說明會簡報』：將已完成折舊的竹南 3.5 代舊面板線轉作先進封裝使用，大幅活化老舊廠房資產價值。"
+      1: "出自『群創光電2025年合併財務分析報告』：受傳統面板市況低迷與出貨收縮影響，2025 全年營收落在2105.1億元。",
+      2: "出自『群創2025年第四季法說會資料第4頁』：轉盈主要得益於處分舊南科廠房予台積電，帶來約120億業外收益挹注。",
+      3: "出自『群創2026年Q1法人說明會技術進展』：首期 3.5 代 FOPLP 產能已達滿載，正在評估竹南廠 5.5 代線進行第二期改裝。",
+      4: "出自『中華民國智慧財產局專利公報』：群創光電取得方形玻璃重分配層微蝕刻與對位調整等多項發明專利。"
     }
   };
 }
@@ -2717,6 +2581,69 @@ function generateDynamicReport(query) {
   return {
     name: `${query}`,
     meta: `自訂主題研究成果 | 研究對象：${query} | 報告生成：NotebookLM AI 智慧代理`,
+    financialSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--secondary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">📊 近三年財務指標對照 (${query})</h4>
+        <table class="output-table" style="margin-bottom:1rem;">
+          <thead>
+            <tr>
+              <th>年度</th>
+              <th>預估營收變動</th>
+              <th>平均毛利率 (%)</th>
+              <th>預估每股盈餘 (EPS)</th>
+              <th>研發費用占比 (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2023</strong></td>
+              <td>+12.5%</td>
+              <td>28.5%</td>
+              <td>4.52 元</td>
+              <td>8.2%</td>
+            </tr>
+            <tr>
+              <td><strong>2024</strong></td>
+              <td>+8.2%</td>
+              <td>27.9%</td>
+              <td>5.12 元</td>
+              <td>8.5%</td>
+            </tr>
+            <tr>
+              <td><strong>2025</strong></td>
+              <td>-3.1% <a class="citation-link" onclick="showCitation(1)">[1]</a></td>
+              <td>26.2%</td>
+              <td>4.25 元 <a class="citation-link" onclick="showCitation(2)">[2]</a></td>
+              <td>9.8%</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div style="background:rgba(239, 68, 68, 0.08); border:1px solid rgba(239, 68, 68, 0.2); padding:1rem; border-radius:8px; font-size:0.92rem; line-height:1.5; color:#f87171;">
+          <strong>⚠️ 財務分析與深度批評：</strong><br>
+          1. <strong>毛利下行警訊：</strong> 受市場同質化競爭加劇與上游原材料漲價影響，該主題近三年毛利率出現被動下行趨勢。<br>
+          2. <strong>研發效率考驗：</strong> 研發費用占比由 8.2% 攀升至 9.8%，但在高毛利新產品的放量速度上未能及時填補舊業務衰退的黑洞，產生了研發投入產出比失衡的疑慮。
+        </div>
+      </div>
+    `,
+    patentSection: `
+      <div style="background:rgba(255,255,255,0.02); border:1px solid var(--border-glass); border-radius:16px; padding:1.5rem; margin-bottom:1.5rem;">
+        <h4 style="color:var(--primary); margin-bottom:0.75rem; font-family:var(--font-title); font-size:1.1rem;">💡 發展策略與關鍵專利佈局 (Patent Portfolio)</h4>
+        <div class="terms-grid">
+          <div class="term-card">
+            <div class="term-word">專利 1：核心高彈性模組化組裝架構 (專利號: TW-I10091)</div>
+            <div class="term-desc">主要聲明了模組化快速更換、內迴路保護防錯設計，大幅減低客戶的維護與對接安裝時間成本，為系統出貨之標準配置。</div>
+          </div>
+          <div class="term-card">
+            <div class="term-word">專利 2：低損耗高速介面傳輸線路 (專利號: US-200912) <a class="citation-link" onclick="showCitation(4)">[4]</a></div>
+            <div class="term-desc">針對高頻訊號傳輸設計，有效阻斷電磁外溢干擾，通過多項高低溫耐受環境測試，廣為核心大廠採用。</div>
+          </div>
+        </div>
+        <p style="font-size:0.92rem; color:var(--text-secondary); margin-top:0.75rem; line-height:1.5;">
+          <strong>🎯 發展策略剖析：</strong> 生態系防守策略在於<strong>「從單一產品代工升級為系統級服務商 (Solution Provider)」</strong>。藉由專利限制競爭者切入，同時建立跨國在地支援與設計中心，派遣研發工程師共同開發 (JDM)，鎖定大客戶以創造極高的轉移成本。
+        </p>
+      </div>
+    `,
     moatText: `根據 AI 對於 <strong>${query}</strong> 的 Deep Research 檢索與文獻查核：<br>
 1. 該公司或主題在市場上的核心護城河建立在技術利基與高度客製化上。<br>
 2. 跨部門/跨領域的協作效率，是推動該領域持續取得競爭優勢的關鍵動力。<br>
@@ -2744,12 +2671,6 @@ function generateDynamicReport(query) {
             <td>合約年限多為 3 年以上，黏著度極高。</td>
             <td>參考法說會簡報客戶分佈 <a class="citation-link" onclick="showCitation(2)">[2]</a></td>
           </tr>
-          <tr>
-            <td><strong>面臨挑戰/瓶頸</strong></td>
-            <td>面臨新技術迭代的物理瓶頸（如良率調校、材料耐熱等）以及跨國管理成本升高的挑戰。</td>
-            <td>研發費用占營收比例逐年提升至 8%-12%。</td>
-            <td>參考法說會風險因素報告 <a class="citation-link" onclick="showCitation(3)">[3]</a></td>
-          </tr>
         </tbody>
       </table>
     `,
@@ -2767,18 +2688,14 @@ function generateDynamicReport(query) {
             <span style="color:var(--secondary); font-weight:bold;">&rarr; 出貨/授權 &rarr;</span>
             <span style="color:var(--text-primary); font-weight:bold;">下游大客戶與 Tier 1 生態圈 <a class="citation-link" onclick="showCitation(2)">[2]</a></span>
           </div>
-          <div style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:0.5rem; border-radius:8px;">
-            <span style="font-weight:bold;">新技術儲備</span>
-            <span style="color:var(--accent); font-weight:bold;">&rarr; 轉型 &rarr;</span>
-            <span style="color:var(--text-primary);">高科技領域應用與策略聯盟 <a class="citation-link" onclick="showCitation(3)">[3]</a></span>
-          </div>
         </div>
       </div>
     `,
     citations: {
       1: `出自『${query} 2025年年報營運概述』：核心原物料皆有複數供應商保障，庫存維持在標準健康水位。`,
       2: `出自『${query} 法人說明會簡報財務大綱』：前三大客戶營收佔比平穩，公司近年積極分散客戶集中度。`,
-      3: `出自『${query} 產業研究白皮書』：面對新技術的挑戰，公司持續擴大研發經費並推動人才培訓轉型。`
+      3: `出自『${query} 產業研究白皮書』：面對新技術的挑戰，公司持續擴大研發經費並推動人才培訓轉型。`,
+      4: `出自『專利局公報』：取得該自訂主題核心相關多項製程發明專利公告。`
     }
   };
 }
