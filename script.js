@@ -199,11 +199,11 @@ const workflowData = {
           "點擊展開所有分支（例如：理論源起、技術層面、應用場域）",
           "閱讀分支結構，挑選 2-3 個你最感興趣或最不理解的子主題，作為下一步提問的方向"
         ],
-        promptTemplate: `無（直接點擊 Studio 中的「心智圖」與「簡介文件」生成即可）`,
+        promptTemplate: '無（直接點擊 Studio 中的「心智圖」與「簡介文件」生成即可）',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">心智圖會清楚呈現 `自働生產管理環 JJC` &rarr; `物聯網低成本感測` &rarr; `以人為本現場 PDCA` 的因果關係，這能讓您直觀理解大系統是如何被分解為自治的小型控制環的。</p>
+            <p class="vk-desc">心智圖會清楚呈現 '自働生產管理環 JJC' &rarr; '物聯網低成本感測' &rarr; '以人為本現場 PDCA' 的因果關係，這能讓您直觀理解大系統是如何被分解為自治的小型控制環的。</p>
           </div>
           <div class="notebooklm-mock">
             <div class="mock-header">
@@ -550,11 +550,11 @@ const workflowData = {
           "在 Studio 面板點擊心智圖",
           "查看分支，抓出 SBCE 決策樹與 A3 報告的關聯線。"
         ],
-        promptTemplate: `無`,
+        promptTemplate: '無',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">心智圖會清楚呈現 `精實研發 LPPD` &rarr; `套式同步工程 SBCE` &rarr; `延遲決策降低重工` 的因果關係，點擊這些關聯線能讓您快速掌握老舊面板廠是如何透過 TRIZ 分割與改用原則重獲新生的。</p>
+            <p class="vk-desc">心智圖會清楚呈現 '精實研發 LPPD' &rarr; '套式同步工程 SBCE' &rarr; '延遲決策降低重工' 的因果關係，點擊這些關聯線能讓您快速掌握老舊面板廠是如何透過 TRIZ 分割與改用原則重獲新生的。</p>
           </div>
           <div class="notebooklm-mock">
             <div class="mock-header">
@@ -892,7 +892,7 @@ const workflowData = {
           "點記展開所有分支，花 3-5 分鐘瀏覽所有子節點",
           "點擊有興趣的節點，AI 會在中間對話面板給予詳細的文獻回答，您可以直接將其儲存為記事"
         ],
-        promptTemplate: `無（直接點擊 Studio 中的「心智圖」生成即可）`,
+        promptTemplate: '無（直接點擊 Studio 中的「心智圖」生成即可）',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
@@ -1182,11 +1182,11 @@ const workflowData = {
           "點選「新增來源」 &rarr; 選擇「上傳檔案」 &rarr; 上傳台積電最新一季的「法說會簡報 PDF」與「年報 PDF」",
           "點選「新增來源」 &rarr; 選擇「YouTube 連結」 &rarr; 貼上張忠謀創始人專訪等 YouTube URL"
         ],
-        promptTemplate: `無（本步驟為來源篩選與手動補充 IR、年報、YouTube 訪談檔案，無需發送 Prompt）`,
+        promptTemplate: '無（本步驟為來源篩選與手動補充 IR、年報、YouTube 訪談檔案，無需發送 Prompt）',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">在左側來源清單中，您會看到上傳的 `TSMC_Q3_Earnings_Presentation.pdf` 與 `張忠謀演講_YouTube`。NotebookLM 會自動擷取 YouTube 的字幕逐字稿，這會讓後續關於「護城河」與「地緣政治挑戰」的對話極其精準且有憑有據。</p>
+            <p class="vk-desc">在左側來源清單中，您會看到上傳的 'TSMC_Q3_Earnings_Presentation.pdf' 與 '張忠謀演講_YouTube'。NotebookLM 會自動擷取 YouTube 的字幕逐字稿，這會讓後續關於「護城河」與「地緣政治挑戰」的對話極其精準且有憑有據。</p>
           </div>
           <div class="notebooklm-mock">
             <div class="mock-header">
@@ -1257,11 +1257,11 @@ const workflowData = {
           "點選「心智圖 (Mind Map)」並展開所有分支，花 3-5 分鐘瀏覽核心與衍生概念",
           "點選「簡介文件」，快速掃描台積電本季法說會的核心數據 (如毛利率、資本支出)"
         ],
-        promptTemplate: `無（直接點擊 Studio 中的「心智圖」與「簡介文件」生成即可）`,
+        promptTemplate: '無（直接點擊 Studio 中的「心智圖」與「簡介文件」生成即可）',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">在 Studio 心智圖中，點選 `美國亞利桑那建廠進度` 或 `日本熊本廠良率`，NotebookLM 會自動將對應的法說會答詢脈絡抽出來，在對話框裡做成摘要，幫您快速掌握跨國建廠進度與供應鏈關係。</p>
+            <p class="vk-desc">在 Studio 心智圖中，點選 '美國亞利桑那建廠進度' 或 '日本熊本廠良率'，NotebookLM 會自動將對應的法說會答詢脈絡抽出來，在對話框裡做成摘要，幫您快速掌握跨國建廠進度與供應鏈關係。</p>
           </div>
           <div class="notebooklm-mock">
             <div class="mock-header">
@@ -1470,11 +1470,11 @@ const workflowData = {
           "點選「新增來源」 &rarr; 選擇「上傳檔案」 &rarr; 上傳群創法說會報告 PDF 與大面積玻璃基板封裝的最新 IEEE 技術論文",
           "補充群創高層接受財經媒體專訪的影音 URL"
         ],
-        promptTemplate: `無（本步驟為來源篩選與手動補充，無需發送 Prompt）`,
+        promptTemplate: '無（本步驟為來源篩選與手動補充，無需發送 Prompt）',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">在 Sources 列表中，確保勾選了上傳的 `Innolux_Investor_Meeting.pdf` 與半導體封裝論文。這能保證 AI 在接下來的術語整理與大中小提問中，能精準引用面板廠與先進封裝廠的物理參數。</p>
+            <p class="vk-desc">在 Sources 列表中，確保勾選了上傳的 'Innolux_Investor_Meeting.pdf' 與半導體封裝論文。這能保證 AI 在接下來的術語整理與大中小提問中，能精準引用面板廠與先進封裝廠的物理參數。</p>
           </div>
         `
       },
@@ -1524,11 +1524,11 @@ const workflowData = {
           "點擊右側 Studio 面板 &rarr; 點擊「心智圖 (Mind Map)」",
           "查看「群創光電」分支如何延伸到「FOPLP 技術」、「舊世代面板廠改裝」與「玻璃基板供應鏈」"
         ],
-        promptTemplate: `無`,
+        promptTemplate: '無',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
-            <p class="vk-desc">心智圖會清楚呈現 `群創光電` &rarr; `舊廠折舊完畢` &rarr; `轉為 FOPLP 先進封裝` &rarr; `晶圓代工外溢效應` 的因果關係，點擊這些關聯線能讓您快速掌握老舊面板廠是如何透過 TRIZ 分割與改用原則重獲新生的。</p>
+            <p class="vk-desc">心智圖會清楚呈現 '群創光電' &rarr; '舊廠折舊完畢' &rarr; '轉為 FOPLP 先進封裝' &rarr; '晶圓代工外溢效應' 的因果關係，點擊這些關聯線能讓您快速掌握老舊面板廠是如何透過 TRIZ 分割與改用原則重獲新生的。</p>
           </div>
           <div class="notebooklm-mock">
             <div class="mock-header">
@@ -1733,7 +1733,7 @@ const workflowData = {
           "點選「新增來源」上傳官方「季報/年報 PDF」或「法說會 Presentation PDF」",
           "點選「新增來源」並貼上相關的 YouTube 影音連結"
         ],
-        promptTemplate: `無`,
+        promptTemplate: '無',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
@@ -1773,7 +1773,7 @@ const workflowData = {
           "點選「心智圖 (Mind Map)」並展開所有分支進行瀏覽",
           "點選「音訊摘要 (Audio Overview)」，生成雙人 Podcast，用聽覺快速吸收背景脈絡"
         ],
-        promptTemplate: `無`,
+        promptTemplate: '無',
         outputContent: `
           <div class="vk-thought-box" style="margin-top: 1rem;">
             <div class="vk-title">💡 介面操作引導</div>
@@ -1894,32 +1894,32 @@ const caseConfig = {
   lean: {
     title: "學術理論分析案例",
     desc: "精實管理 4.0 (成大楊大和教授 JJC 模式)",
-    icon: `<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>`
+    icon: '<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>'
   },
   lppd: {
     title: "精實研發學術案例",
     desc: "精實產品與流程開發 (成大洪郁修教授 LPPD)",
-    icon: `<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>`
+    icon: '<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>'
   },
   academic_blank: {
     title: "自訂學術空白流程",
     desc: "自定義學術理論/論文研究空白模板",
-    icon: `<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>`
+    icon: '<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>'
   },
   tsmc: {
     title: "標竿企業研究案例",
     desc: "台積電 (TSMC) 商業模式與護城河",
-    icon: `<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`
+    icon: '<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>'
   },
   innolux: {
     title: "產業轉型升級案例",
     desc: "群創 (Innolux) 面板級封裝 (FOPLP) 轉型",
-    icon: `<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2h0z"/><polygon points="2 17 12 22 22 17"/><polygon points="2 12 12 17 22 12"/></svg>`
+    icon: '<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2h0z"/><polygon points="2 17 12 22 22 17"/><polygon points="2 12 12 17 22 12"/></svg>'
   },
   industry_blank: {
     title: "自訂產業空白流程",
     desc: "自定義產業/公司/商業研究空白模板",
-    icon: `<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>`
+    icon: '<svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>'
   }
 };
 
@@ -2113,12 +2113,12 @@ function copyPromptText(btn) {
   navigator.clipboard.writeText(promptText).then(() => {
     btn.classList.add('copied');
     btn.querySelector('span').innerText = '已複製！';
-    btn.querySelector('svg').outerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"/></svg>`;
+    btn.querySelector('svg').outerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"/></svg>';
     
     setTimeout(() => {
       btn.classList.remove('copied');
       btn.querySelector('span').innerText = '複製提示詞';
-      btn.innerHTML = `<svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> <span>複製提示詞</span>`;
+      btn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> <span>複製提示詞</span>';
     }, 2000);
   });
 }
