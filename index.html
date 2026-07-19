@@ -57,44 +57,23 @@
   <!-- Control & Switcher Panel -->
   <section class="container">
     <div class="control-panel">
-      <div class="case-selector">
-        <div class="selector-header">請選擇要閱讀與實操的案例主題</div>
-        <div class="selector-buttons">
-          <button class="btn-tab active" data-case="lean" onclick="switchCase('lean')">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-            <div>
-              <div style="font-size: 1.1rem; font-weight: 700;">學術理論分析案例</div>
-              <div style="font-size: 0.85rem; font-weight: 500; opacity: 0.8; margin-top: 0.2rem;">精實管理 4.0 (成大楊大和教授論文)</div>
-            </div>
-          </button>
-          <button class="btn-tab" data-case="video" onclick="switchCase('video')">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
-            <div>
-              <div style="font-size: 1.1rem; font-weight: 700;">實務應用工作流案例</div>
-              <div style="font-size: 0.85rem; font-weight: 500; opacity: 0.8; margin-top: 0.2rem;">如何做一個 1 分鐘的 AI 影片/Reel</div>
-            </div>
-          </button>
-          <button class="btn-tab" data-case="tsmc" onclick="switchCase('tsmc')">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            <div>
-              <div style="font-size: 1.1rem; font-weight: 700;">標竿企業研究案例</div>
-              <div style="font-size: 0.85rem; font-weight: 500; opacity: 0.8; margin-top: 0.2rem;">台積電 (TSMC) 商業模式與護城河</div>
-            </div>
-          </button>
-          <button class="btn-tab" data-case="innolux" onclick="switchCase('innolux')">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2h0z"/><polygon points="2 17 12 22 22 17"/><polygon points="2 12 12 17 22 12"/></svg>
-            <div>
-              <div style="font-size: 1.1rem; font-weight: 700;">產業轉型升級案例</div>
-              <div style="font-size: 0.85rem; font-weight: 500; opacity: 0.8; margin-top: 0.2rem;">群創 (Innolux) 面板級封裝 (FOPLP)</div>
-            </div>
-          </button>
-          <button class="btn-tab" data-case="template" onclick="switchCase('template')">
-            <svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-            <div>
-              <div style="font-size: 1.1rem; font-weight: 700;">自訂研究空白範本</div>
-              <div style="font-size: 0.85rem; font-weight: 500; opacity: 0.8; margin-top: 0.2rem;">自定義學術/實務研究空白流程</div>
-            </div>
-          </button>
+      <!-- Track Switcher -->
+      <div class="track-selector">
+        <button class="btn-track active" data-track="academic" onclick="switchTrack('academic')">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5z"/></svg>
+          <span>學術研究工作流 (Academic Track)</span>
+        </button>
+        <button class="btn-track" data-track="industry" onclick="switchTrack('industry')">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>產業與公司研究工作流 (Industry Track)</span>
+        </button>
+      </div>
+
+      <!-- Case Selector -->
+      <div class="case-selector" style="margin-top: 1.5rem; border-top: 1px solid var(--border-glass); padding-top: 1.5rem;">
+        <div class="selector-header" id="case-selector-header">請選擇學術研究案例主題</div>
+        <div class="selector-buttons" id="case-buttons-container">
+          <!-- Dynamic cases will be rendered here by script.js -->
         </div>
       </div>
     </div>
